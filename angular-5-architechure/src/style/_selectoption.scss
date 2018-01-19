@@ -1,0 +1,54 @@
+
+@import "variables";
+%extend_1 {
+	color: $white;
+	text-decoration: none;
+	background-color: $black !important;
+	outline: none !important;
+}
+.modal-content{
+   .modal-body{
+       .down-selectpic{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px;
+            padding: 7px 0px;
+            .bootstrap-select{
+                height: auto;
+                .dropdown-toggle {
+                    color: #A9A9A9 !important;
+                    background-color: #666666 !important;
+                    padding: 0px 28px;
+                    border-radius: 0px;
+                    border: 1px solid #292929;
+                    margin: 0px !important;
+                    outline:none !important;
+                }
+            }
+            .dropdown-menu {
+                top: 100%;
+                z-index: 1000;
+                 border-radius: 2px !important;
+                background-color: #444 !important;
+                width: 100%;
+                color: #A9A9A9 !important;
+                li{
+                    a {
+                            color: #ddd;
+                            &:active {
+                                @extend %extend_1;
+                         }
+                        &:focus {
+                                @extend %extend_1;
+                        }
+                        &:hover {
+                                @extend %extend_1;
+                         }
+                        }
+                      
+
+                }
+            }
+        }
+    }
+}

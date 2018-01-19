@@ -1,0 +1,1 @@
+export * from './foxarchive-delivery.component';

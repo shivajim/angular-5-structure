@@ -1,0 +1,97 @@
+
+@import "variables";
+
+
+.sidebar-nav {
+    .customfilter-selectbox-container{
+        margin: 0px;
+        padding: 09px;
+        background-color: $color_shark_approx !important;;
+        .bootstrap-select{
+            background-color: $color_shark_approx !important;;
+            .dropdown-toggle{
+                border-color: $color_fuscous_gray_approx !important;
+                color: $wild_sand !important;;
+                margin-left: 0;
+                background-color: $color_storm_dust_approx !important;
+                border-radius: 0px !important;
+                width: 88% !important;
+                box-shadow: inset 0 3px 5px $black_12_5!important;
+                outline:none !important;
+            }
+            .dropdown-menu{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1000;
+                float: left;
+                min-width: 125px !important;
+                padding: 2px 0;
+                width: 100%;
+                color: $color_shady_lady_approx !important;
+                background-color: $color_cod_gray_approx !important;
+                max-height: 320px !important;
+                
+                .bs-searchbox
+                {
+                    input{
+                        background-color: $color_storm_dust_approx !important;
+                        border: 1px solid transparent !important;
+                        color: $wild_sand !important;
+                    }
+                }
+                ul{
+                    min-width: 125px !important;
+                    background-color: $color_tundora_approx !important;
+                    color:$color_shady_lady_approx !important;
+                    li{
+                       &.active{
+                           a{
+                            color: $white;
+                            text-decoration: none;
+                            background-color: $black !important;
+                            outline: none !important;
+                           }
+                       }
+                        &.dropdown-header{
+                            color:$color_alto_approx;
+                        }
+                        &.divider{
+                            background-color: $color_shark_approx !important;
+                        }
+                       
+                            a {
+                               font-size: 12px;
+                               cursor: pointer;
+                                &:active {
+                                    color: $white;
+                                    text-decoration: none;
+                                    background-color: $black !important;
+                                    outline: none !important;
+                                }
+                               &:focus {
+                                color: $white;
+                                text-decoration: none;
+                                background-color: $black !important;
+                                outline: none !important;
+                               }
+                               &:hover {
+                                color: $white;
+                                text-decoration: none;
+                                background-color: $black !important;
+                                outline: none !important;
+                                }
+
+                               .text{
+                                       display: inline-block;
+                                       color: $wild_sand !important;
+                               }
+                           }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+

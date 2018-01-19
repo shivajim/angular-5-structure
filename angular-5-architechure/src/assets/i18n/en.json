@@ -1,0 +1,35 @@
+{
+  "login": {
+    "title": "Login",
+    "intro": "For Any Assistance & Information, Please Contact:",
+    "remember": "Remember Me",
+    "username":"User Name",
+    "password":"Password",
+    "button":{
+      "title" : "Log In"
+    }
+  },
+  "dashboard":{
+    "title":"Select Project",
+    "selectProject":"Select Project",
+    "myRecent":"My Recent",
+    "favorites":"Favorites"
+  },
+  "top-menu":{
+    "viewsettings":{
+      "tooltip": "Change view settings",
+      "title": "View settings",
+      "columns": "Columns",
+      "select":{
+        "columns": "Columns",
+        "images": "Images",
+        "size": "Size"
+      },
+      "applySettings":"Apply settings to all projects",
+      "buttons":{
+        "submit": "SUBMIT",
+        "close": "CLOSE"
+      }
+    }
+  }
+}

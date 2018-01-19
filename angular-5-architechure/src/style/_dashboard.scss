@@ -1,0 +1,54 @@
+@import "variables";
+
+.db_selcont {
+    .db_selunder {
+        .db_scs {
+            .db_frgroup{
+                button {
+                        padding: 7px 12px;
+                        border: 1px solid $black !important;
+                        border-radius: 2px !important;
+                        outline: none !important;
+                        background-color: $color_storm_dust_approx!important;
+                        color:$wild_sand !important;
+                    }
+                .dropdown-menu{
+                    background-color: $color_fuscous_gray_approx !important;
+                    border: none !important;;
+                    border-radius: 2px !important;
+                    box-shadow: 0 6px 12px $black_51;
+                    li{
+                        a {
+                            font-size: 12px;
+                            cursor: pointer;
+                            &:active {
+                                color: $white;
+                                text-decoration: none;
+                                background-color: $black !important;
+                                outline: none !important;
+                            }
+                            &:focus {
+                                color: $white;
+                                text-decoration: none;
+                                background-color: $black !important;
+                                outline: none !important;
+                            }
+                            &:hover {
+                                color: $white;
+                                text-decoration: none;
+                                background-color: $black !important;
+                                outline: none !important;
+                            }
+                            .text{
+                                    display: inline-block;
+                                    color: $wild_sand !important;
+                            }
+                        }   
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+

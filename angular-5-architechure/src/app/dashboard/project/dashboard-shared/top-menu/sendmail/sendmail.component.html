@@ -1,0 +1,126 @@
+<div class="modal fade" id="email_send" tabindex="-1" role="dialog" aria-labelledby="fsModalemail" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="db_com email_div modal-com">
+                <div class="modal-header db_com">
+                  
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                     <!-- <button type="button" class="close expand_btn"><i class="fa fa-expand" aria-hidden="true"></i></button>
+                      <button type="button" class="close minimize_btn"><i class="fa fa-minus" aria-hidden="true"></i></button> -->
+                    <h4 class="modal-title">COMPOSE NEW MAIL</h4>
+
+                </div>
+                <div class="modal-body db_com">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" id="email_row">
+                            <div class="email_cont db_com">
+                                <!-- <h5 class="compose_mail">COMPOSE NEW MESSAGE</h5> -->
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                    
+                                        <input type="text" class="form-control" id="email" placeholder="To">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="email_cont db_com">
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Cc">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="email_cont db_com">
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Subject">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 text_area">
+                        <div class="to_div db_com">
+                            <div class="form-group" id="body_image_info">
+                                <textarea class="form-control" id="body" rows="6" placeholder="Body(Image Info)"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="row img_container_div">
+                            <div class="div_img_style db_com">
+                                <div class="col-sm-8 selected_images">
+                                    <h5 class="attached_images">Attached Images:</h5>
+                                    <div class="attached_images_container">
+                                    <div class="download_img">
+                                        <img src="./assets/images/images.jpg">
+                                        <h6>Image Title</h6>
+                                    </div>
+                                    <div class="download_img">
+                                        <img src="./assets/images/images.jpg">
+                                        <h6>Image Title</h6>
+                                    </div>
+                                    <div class="download_img">
+                                        <img src="./assets/images/images.jpg">
+                                        <h6>Image Title</h6>
+                                    </div>
+                                    <div class="download_img">
+                                        <img src="./assets/images/images.jpg">
+                                        <h6>Image Title</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="img_file db_com">
+                                        <h5 id="choose_file_txt">Choose File Type</h5>
+                                        <div class="radio down-input">
+                                            <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Small JPEG
+                                            </label>
+                                        </div>
+                                        <div class="radio down-input">
+                                            <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Large JPEG
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="include_img_body">
+                        <div class="checkbox down-input di-check">
+                            <label class="chek-label">
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            Include Image Data in Message Body
+            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 send_btn_div">
+                    <div class="send_btn_box">
+                        <button type="button" id="mail_send_btn" class="pull-left">SEND!</button>
+                    </div>	
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="modal-footer db_com">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                 <button type="button" id="mail_send_btn" class="pull-left">SEND!</button>
+            </div> -->
+        </div>
+    </div>
+</div>

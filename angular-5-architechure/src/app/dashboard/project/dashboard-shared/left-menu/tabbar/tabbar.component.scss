@@ -1,0 +1,60 @@
+
+@import "../../../../../../style/variables";
+		
+.tab_div {
+		width: 100%;
+		float: left;
+		position: relative;
+		.tab_ul {
+				list-style: none;
+				display: inline-block;
+				padding: 0;
+				margin: 0 auto;
+				width: 100%;
+				background-color: $color_shark_approx;
+				li {
+					line-height: 40px;
+					list-style: none;
+					display: inline-block;
+					float: none;
+					text-align: center;
+					width: 31.33%;
+					&:hover {
+						background-color: $color_fuscous_gray_approx;
+					}
+					a {
+						border: none;
+						color: $color_storm_dust_approx;
+						display: block;
+						&:hover {
+							border-bottom: 3px solid $color_prairie_sand_approx;
+							color: $white;
+						}
+					}
+					&.active a {
+						border-bottom: 3px solid $color_prairie_sand_approx;
+						&:focus {
+							border-bottom: 3px solid $color_prairie_sand_approx;
+						}
+						&:hover {
+							border-bottom: 3px solid $color_prairie_sand_approx;
+						}
+					}
+				}
+			}
+}
+.tab-content {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 0;
+	.side_dropdown {
+		padding: 15px 0;
+		color: $white;
+	}
+	.pinfo {
+		padding: 5px 10px;
+		color: $white;
+	}
+}	
+	

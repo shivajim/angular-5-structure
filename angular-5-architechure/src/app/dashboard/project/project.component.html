@@ -1,0 +1,23 @@
+<div class="bgcolor">
+  <fs-top-menu (notify)="toggleImgtoolbar($event)"></fs-top-menu>
+  <div class="galley-page-container db_com">
+    <div id="wrapper" class="db_com" [ngClass]="{'toggled': checkToggle === true}">
+      <a href="javascript:void(0)" class="menu-toggle-button" id="menu-toggle" (click)="togglesidebar()">
+                  <i class="fa fa-bars"></i>
+      </a>
+      <div id="sidebar-wrapper" class="sidebar-wrapper">
+          <div class="sidebar-nav">
+              <fs-customfilter></fs-customfilter>
+              <fs-tab-bar></fs-tab-bar>
+          </div>
+      </div>      
+      <router-outlet></router-outlet>
+      <fs-goto></fs-goto>
+      <fs-sendmail></fs-sendmail>
+      <fs-download></fs-download>
+      <fs-printtool></fs-printtool>
+      <fs-viewsettings></fs-viewsettings>
+    
+    </div>
+  </div>
+</div>

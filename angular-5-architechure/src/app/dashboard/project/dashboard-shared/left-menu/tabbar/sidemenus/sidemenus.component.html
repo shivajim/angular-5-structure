@@ -1,0 +1,205 @@
+
+   
+       
+      
+          <div class="panel-group" id="accordion">
+      
+            <!-- <div *ngIf="active_Search" class="panel panel-default advanced_search">
+              <a href="javascript:void(0)" title="Advance Search" data-toggle="modal" data-target="#search">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <i class="fa fa-search dp_i" aria-hidden="true"></i>
+                  </h4>
+                </div>
+              </a>
+            </div> -->
+      
+      
+            <div class="panel panel-default">
+      
+                <div class="panel-heading">
+                  <h4 class="panel-title ">
+                      <a title="Albums" data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse1">
+                    <i class="fa fa-address-book-o dp_ie" aria-hidden="true"></i>
+                    <span>Albums</span>
+                  </a>
+                  </h4>
+                </div>
+           
+              <div id="collapse1" class="panel-collapse collapse ">
+                <div class="panel-body">
+                  <ul class="submenuItems child_menu" id="albums">
+                    <li class="items">
+                      <i class="fa fa-plus-square-o dp_i" title="Add Album" data-toggle="modal" data-target="#AddAlbum" aria-hidden="true"></i>
+                      <i class="fa fa-minus-square-o dp_i" title="Delete Album" data-toggle="modal" data-target="#DelAlbum" aria-hidden="true"></i>
+                      <i class="fa fa-language dp_i" title="Rename Album" data-toggle="modal" data-target="#RnmAlbum" aria-hidden="true"></i>
+                      <i class="fa fa-pencil-square-o dp_i" title="Edit Album Permissions" data-toggle="modal" data-target="#EdiAlbum" aria-hidden="true"></i>
+                      <i class="fa fa-sort dp_i" title="Sort Images in Selected Album" data-toggle="modal" data-target="" aria-hidden="true"></i>
+                      <i class="fa fa-trash-o dp_i" title="Drag Image to remove from Album" data-toggle="modal" data-target="" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>Custom Albums</p>
+                    </li>
+                    <!-- <div *ngIf="(albumList.length)>0">
+                      <li *ngFor="let album of albumList">
+                        <a href="javascript:void(0);">
+                          <span (click)="selectAlbum(album)" [ngClass]="{'albumSelect': album.id === selectedAlbum}">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                          </span>
+                          <span (click)="loadAlbumImages(album)"> {{album.name}}({{ album.imageCount}})</span>
+                        </a>
+                      </li>
+                    </div> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+            
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a title="Administration" data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse2">
+                      <i class="fa fa-users dp_ie" aria-hidden="true"></i>
+                      <span>Administration</span>
+                    </a>
+      
+                  </h4>
+                </div>
+             
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="submenuItems child_menu">
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#sda_aar">Actor Approval Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#sda_ffl">Filtered FileName List</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#sda_sfl">Selected FileName List</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#sda_iex">Image Exclusives</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#psreport">Project Summary Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#imreport">Image Notes Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#icreport">Image Caption Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#taggview1">Tagging View #1</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#taggview2">Tagging View #2</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#curreport">Current Activity Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#transreport">Transaction Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#iiftagging">Advanced Image Tagging</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#adreport">Actor ID Report</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#delivery">Delivery</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#foxaechive">FOX Archive Delivery</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#unfinalization">Finalize/Unfinalize</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-block btn_admin" data-toggle="modal" data-target="#rejtoggle">Rejection Toggle</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a title="Wide Edit Album" data-toggle="collapse" data-parent="#accordion"class="collapsed"  href="#collapse3">
+                    <i class="fa fa-pencil-square-o dp_ie" aria-hidden="true"></i>
+                    <span>Wide Edit Album</span>
+                  </a>
+      
+                  </h4>
+                </div>
+      
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="submenuItems">
+                    <li class="itemss">
+                      <i class="fa fa-plus-square-o dp_i" title="Add Album" data-toggle="modal" data-target="#AddAlbum1" aria-hidden="true"></i>
+                      <i class="fa fa-minus-square-o dp_i" title="Delete Album" data-toggle="modal" data-target="#DelAlbum1" aria-hidden="true"></i>
+                      <i class="fa fa-language dp_i" title="Rename Album" data-toggle="modal" data-target="#RnmAlbum1" aria-hidden="true"></i>
+                      <i class="fa fa-pencil-square-o dp_i" title="Edit Album" data-toggle="modal" data-target="#EdiAlbum1" aria-hidden="true"></i>
+                      <i class="fa fa-tag dp_i" title="Tagging Album" data-toggle="modal" data-target="#Taggimg" aria-hidden="true"></i>
+                      <i class="fa fa-envelope dp_i" title="Email" data-toggle="modal" data-target="#Emailnote" aria-hidden="true"></i>
+                      <i class="fa fa-sign-out dp_i" title="Album Sign-off" data-toggle="modal" data-target="#album-sign-off" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                      <p><i class="fa fa-folder-o" aria-hidden="true"></i>Custom Album</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+           
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a title="Audit" data-toggle="collapse" data-parent="#accordion" class="collapsed"  href="#collapse4">
+                    <i class="fa fa-file-text-o dp_ie" aria-hidden="true"></i>
+                    <span>Audit</span>
+                  </a>
+      
+                  </h4>
+                </div>
+             
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="submenuItems child_menu">
+                    <li>
+                      <a href="javascript:void(0)">Conflicts</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">No Conflicts</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">Bypass 2nd Tagger</a>
+                    </li>
+                    <li class="aud_btn">
+                      <button class="btn audit_btn">Publish Image(s)</button>
+                    </li>
+                    <li class="aud_btn">
+                      <button class="btn audit_btn">Hide Image(s)</button>
+                    </li>
+                    <li class="aud_btn">
+                      <button class="btn audit_btn">UnhideImage(s)</button>
+                    </li>
+                    <li class="aud_btn">
+                      <button class="btn audit_btn">Clear Tagg(s)</button>
+                    </li>
+                    <li class="aud_btn">
+                      <button class="btn audit_btn">Clear Single Tag</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+  
+       

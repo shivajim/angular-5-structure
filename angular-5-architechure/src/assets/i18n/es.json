@@ -1,0 +1,36 @@
+{
+    "login":{
+    "title": "Iniciar sesión",
+    "intro": "Para cualquier asistencia e información, póngase en contacto con",
+    "remember": "Recuérdame",
+    "username":"Nombre de usuario",
+    "password":"Contraseña",
+    "button":{
+      "title" : "iniciar sesión"
+    }
+    },
+    "dashboard":{
+      "title":"Seleccionar proyecto",
+      "selectProject":"Seleccionar proyecto",
+      "myRecent":"Mi reciente",
+      "favorites":"Favoritos"
+    },
+    "top-menu":{
+      "viewsettings":{
+        "tooltip": "Modifier les paramètres d'affichage",
+        "title": "PARAMÈTRES D'AFFICHAGE",
+        "columns": "Colonnes",
+        "select":{
+          "columns": "Colonnes",
+          "images": "Images",
+          "size": "Taille"
+        },
+        "applySettings":"Appliquer les paramètres à tous les projets",
+        "buttons":{
+          "submit": "SOUMETTRE",
+          "close": "FERMER"
+        }
+      }
+    }
+
+}

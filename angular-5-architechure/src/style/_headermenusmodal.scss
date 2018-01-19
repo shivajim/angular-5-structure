@@ -1,0 +1,73 @@
+@import "variables";
+
+.modal{
+    .modal-dialog{
+        .modal-content{
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+             .modal-com{
+                border-radius: 4px;
+                background-color: $color_fuscous_gray_approx;
+                 &.db_com{
+                    width: 100%;
+                    float: left;
+                    position: relative;
+                 }
+                 .modal-header{
+                    border-bottom: 2px solid #292929;
+                    background-color: #666;
+                    .close {
+                        width: 25px;
+                        height: 25px;
+                        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                        border-radius: 100%;
+                        background-color: $color_bombay_approx;
+                        //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                        text-shadow: none;
+                        opacity: 1;
+                        &:focus {
+                            //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                            box-shadow: none;
+                            outline: none;
+                        }
+                        span:nth-child(1){
+                            position: relative !important;
+                            top: -1px !important;
+                        }
+                        &.expand_btn{
+                            margin-right: 10px;
+                           
+                            i {
+                                font-size: 12px !important;
+                                position: relative;
+                                top: -4px;
+                            }
+                        }
+                        &.minimize_btn{
+                            margin-right: 10px;
+                            
+                            i {
+                                font-size: 12px !important;
+                                position: relative;
+                                top: -2px;
+                            }
+                        }
+                    }
+                     h4{
+                        color: #ddd;
+                        margin: 0;
+                        line-height: 1.42857143;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                     }
+            
+                }
+                 .modal-body {
+                    position: relative;
+                    padding: 15px;
+                }
+        }
+    }
+ }
+}

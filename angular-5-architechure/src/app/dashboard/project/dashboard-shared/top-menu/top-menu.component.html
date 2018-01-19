@@ -1,0 +1,88 @@
+<div class="breadcrumb_container_section bcs db_com">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ol class="breadcrumb st_breadcrumb">
+                    <!--<li class="breadcrumb-item"><a href="javascript:void(0)">Gallery</a></li> -->
+                    <li class="breadcrumb-item">
+                        <a href="javascript:void(0)">FS-DEMO-EXEC</a>
+                    </li>
+                    <!-- <li class="breadcrumb-item active">Images</li> -->
+                </ol>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="db_com st_headicon">
+                    <ul class="header_menu">
+                        <li>
+                            <button title="Image Toolbar" class="img_toolbar" (click)="showAll()">
+                                <i class="fa fa-text-width" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="I'M DONE" data-toggle="modal" data-target="#imdone">
+                                <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Select All" class="select_all">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Deselect All" class="select_alle">
+                                <i class="fa fa-window-close" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Go To" data-toggle="modal" data-target="#goto">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <!-- <li><button title="Make Cover" ><i class="fa fa-window-restore" aria-hidden="true"></i></button></li> -->
+                        <li>
+                            <button title="Email Selected Images" data-toggle="modal" data-target="#email_send">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Download Selected Images" data-toggle="modal" data-target="#fs_download">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Select Images to Compare">
+                                <i class="fa fa-compress" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Print Selected Images" data-toggle="modal" data-target="#printtool">
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="{{'top-menu.viewsettings.tooltip' | translate }}" data-toggle="modal" data-target="#fs_viewsettings">
+                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Delete Selected Asset(s)" data-toggle="modal" data-target="#fs_dele">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button title="Image Info" (click)="aside_show()">
+                                <i class="fa fa-info"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<fs-goto></fs-goto>
+<fs-sendmail></fs-sendmail>
+<fs-download></fs-download>
+<fs-printtool></fs-printtool>
+<fs-viewsettings></fs-viewsettings>

@@ -1,0 +1,67 @@
+<header>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" ><img src="./assets/images/header-logo.png" alt="FS Logo" Title="FS" /></a>
+        </div>
+        
+        <ul class="nav navbar-nav navbar-right">
+              <li  class="select_option">
+                      <select class="selectpicker" title="Select Project" data-live-search="true" >
+                      <option value="viewproject.html">FS_DEMO_EXEC</option>
+                  </select>
+              </li>
+              <li class="dropdown notifications-menu">
+                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" title="Notification">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="badge badge-notify">2</span>
+                      </a>
+                      <ul class="dropdown-menu info_receiv">
+                          <li>
+                              <ul class="menu info">
+                                  <li> <a href="javascript:void(0)">  5 new members joined </a> </li>
+                                  <li> <a href="javascript:void(0)"> You changed your username </a> </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+            <li class="dropdown lan">
+                  <a href="javascript:void(0)" class="dropdown-toggle title1" title="Languages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flag flag-icon-section"></i></a>
+                  <ul class="dropdown-menu">
+                          <li *ngFor="let lang of languages">
+                                  <a>{{ lang }}</a>
+                          </li>
+                      <!-- <li><a href="javascript:void(0)">English</a></li>
+                      <li><a href="javascript:void(0)">français</a></li>
+                      <li><a href="javascript:void(0)">Español</a></li> -->
+                  </ul>
+              </li>
+            <li class="dropdown pro">
+              <a href="#" class="dropdown-toggle title2" data-toggle="dropdown" title="Profile" role="button" aria-haspopup="true" aria-expanded="true">
+                  <img src="./assets/images/got1.jpg" class="img-circle" alt="User Image">
+                  <span id="user-name">{{currentUser.user.firstName}}</span></a>
+              <ul class="dropdown-menu user_pro">
+                  <!-- User image -->
+                  <li class="user-header">
+                      <img src="./assets/images/got1.jpg" class="img-circle pro_img" alt="User Image">
+  
+                      <p id="user-info">
+                          {{currentUser.user.firstName}} - Actor
+                          <small>ID:110101</small>
+                      </p>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                      <div class="pull-left">
+                          <a href="javascript:void(0)" class="btn btn-default btn-flat">Profile</a>
+                      </div>
+                      <div class="pull-right">
+                          <a class="btn btn-default btn-flat" (click)="signOut()" >Sign out</a>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>

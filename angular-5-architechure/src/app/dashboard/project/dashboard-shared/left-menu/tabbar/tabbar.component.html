@@ -1,0 +1,29 @@
+
+<div class="tab_div">
+    <ul class="tab_ul" role="tablist">
+      <li role="presentation" class="active">
+        <a href="#sb_menu" aria-controls="sb_menu" role="tab" data-toggle="tab" >
+          <i class="fa fa-th-large" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#pinfo" aria-controls="pinfo" role="tab" data-toggle="tab" title="Project Info">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" title="Advance Search" data-toggle="modal" data-target="#search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+</div>
+<div class="tab-content db_com">
+    <div role="tabpanel" class="tab-pane active db_com side_dropdown" id="sb_menu">
+        <fs-tab-bar-menus></fs-tab-bar-menus>
+       </div>
+     
+       <div role="tabpanel" class="tab-pane pinfo db_com" id="pinfo">
+          <fs-tab-bar-peojectinfo></fs-tab-bar-peojectinfo>
+        </div>
+</div>  

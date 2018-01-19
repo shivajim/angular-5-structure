@@ -1,0 +1,378 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.css"; 
+@import "../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './style/bootstrap-select/bootstrap-select/sass/bootstrap-select.scss';
+@import './style/bootstrap-select/bootstrap-select/dist/css/bootstrap-select.min.css';
+
+//colors
+$color_prairie_sand_approx: #9c3127;
+$color_romance_approx: #fefefe;
+$white: #fff;
+$color_shark_approx: #292929;
+$black_30: rgba(0,0,0,.3);
+$color_pumice_approx: #cacaca;
+$color_fuscous_gray_approx: #535353;
+$color_shady_lady_approx: #a9a9a9;
+$color_storm_dust_approx: #666666;
+$color_cod_gray_approx: #0c0c0c;
+$color_tundora_approx: #444;
+$color_gallery_approx: #eee;
+$color_cape_cod_approx: #404040;
+$color_alto_approx: #ddd;
+$black: #000;
+
+
+//@extend-elements
+//original selectors
+//.ngx-pagination li.pagination-previous a, .ngx-pagination li.pagination-next a
+%extend_1 {
+	color: $white !important;
+	font-size: 20px;
+	width: 25px;
+	height: 25px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100%;
+	background-color: $color_shark_approx;
+	text-align: center;
+	line-height: 25px;
+	padding: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30;
+}
+
+//original selectors
+//.ngx-pagination a, .ngx-pagination button
+%extend_2 {
+	color: $white !important;
+	display: block;
+	padding: 0.1875rem 0.625rem;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+
+
+.ngx-pagination {
+	margin-left: 0;
+	margin-bottom: 1rem;
+	text-align: center;
+	padding:0px;
+	li:not(:first-child):not(:last-child) {
+		display:none !important;
+		&.pagination-previous {
+			a {
+				@extend %extend_1;
+			}
+			span {
+				display: none !important;
+			}
+		}
+		&.pagination-next {
+			a {
+				@extend %extend_1;
+			}
+			span {
+				display: none !important;
+			}
+		}
+	}
+	.current {
+		padding: 0.1875rem 0.625rem;
+		background: $color_shark_approx  !important;
+		color: $color_romance_approx;
+		cursor: default;
+	}
+	a {
+		@extend %extend_2;
+		&:hover {
+			background: transparent  !important;
+		}
+	}
+	button {
+		@extend %extend_2;
+		&:hover {
+			background: $color_prairie_sand_approx !important;
+		}
+	}
+}
+ngx-pagination .current {
+	padding: 0.1875rem 0.625rem;
+	background: $color_prairie_sand_approx !important;
+	color: $color_romance_approx;
+	cursor: default;
+}
+
+.ngx-pagination .pagination-previous {
+
+	color: $color_pumice_approx;
+	cursor: no-drop !important;
+	color: $white !important;
+	font-size: 20px !important;
+	width: 25px !important;
+	height: 25px !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100% !important;
+	background-color: $color_shark_approx !important;
+	text-align: center !important;
+	line-height: 25px !important;
+	position: relative;
+	top: 2px;
+	left: -47px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30 !important;
+	a::before {
+		content: '«';
+        display: inline-block;
+		margin-right:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+	&.disabled::before {
+		content: '«';
+        display: inline-block;
+		margin-right:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+}
+.ngx-pagination .pagination-next {
+	color: $color_pumice_approx;
+	cursor: no-drop !important;
+	color: $white !important;
+	font-size: 20px !important;
+	width: 25px !important;
+	height: 25px !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100% !important;
+	background-color: $color_shark_approx !important;
+	text-align: center !important;
+	line-height: 25px !important;
+	position: relative;
+	top: 2px;
+	right: -73px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30 !important;
+	a::after {
+		content: '»';
+        display: inline-block;
+		margin-left:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+	&.disabled::after{
+		content: '»';
+        display: inline-block;
+		margin-left:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+}
+/*========Header Menu*/
+.header_menu button:focus {
+	outline: none !important;
+}
+
+/*=====Select sidebar====*/
+.btn-group {
+	> .btn:first-child {
+		margin-left: 0!important;
+		color: $color_shady_lady_approx !important;
+		background-color: $color_storm_dust_approx !important;
+	}
+	&.bootstrap-select.show-tick.form-control {
+		background-color: $color_shark_approx;
+	}
+}
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 125px !important;
+	padding: 5px 0;
+	background-color: $color_tundora_approx !important;
+	width: 100%;
+	color: $color_shady_lady_approx !important;
+	&.open {
+		width: 100%;
+	}
+	.divider {
+		height: 1px;
+		margin: 9px 0;
+		overflow: hidden;
+		background-color: $color_shark_approx !important;
+	}
+}
+#sidebar-wrapper .form-group button {
+	background-color: $color_fuscous_gray_approx !important;
+	border-color: $color_fuscous_gray_approx !important;
+	color: $color_shady_lady_approx !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+	width: 88% !important;
+}
+.form-group.customfilter-selectbox-container .dropdown-menu.open {
+	background-color: $color_cod_gray_approx !important;
+	max-height: 320px !important;
+}
+.bootstrap-select.btn-group {
+	.dropdown-menu li {
+		position: relative;
+		line-height: 23px !important;
+		a.opt {
+			position: relative;
+			padding-left: 10px !important;
+			color: $color_shady_lady_approx !important;
+		}
+	}
+	&.show-tick .dropdown-menu li a span.text {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		font-size: 12px !important;
+	}
+}
+li.dropdown-header {
+	color: $color_gallery_approx !important;
+}
+
+/*=======select modal=====*/
+.modal-content .modal-body .down-selectpic {
+	display: inline-block;
+	vertical-align: middle !important;
+	margin: 0 !important;
+	padding: 7px 0 !important;
+	button {
+		padding: 0 28px;
+		background-color: $color_cape_cod_approx !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		border: 1px solid $color_shark_approx !important;
+		color: $color_alto_approx;
+		outline: none !important;
+		margin: 0 !important;
+	}
+	.form-control {
+		height: auto;
+		.dropdown-menu li a {
+			color: $color_alto_approx !important;
+		}
+	}
+}
+.dropdown-menu > li > a {
+	&:hover {
+		color: $white !important;
+		background-color: $black !important;
+	}
+	&:focus {
+		color: $white !important;
+		text-decoration: none !important;
+		outline: none !important;
+		background-color: transparent !important;
+	}
+}
+
+/*==========image toolbar======*/
+.soc button:focus{
+    outline: none !important;
+}
+
+/*===Select dash==*/
+.db_selcont .db_selunder .db_scs .db_frgroup button {
+    padding: 10px 12px;
+    border: 1px solid #000 !important;
+    border-radius: 2px !important;
+    outline: none !important;
+    background-color: #535353 !important;
+}
+.db_selcont .db_selunder .db_scs .db_frgroup button span.filter-option.pull-left {
+    color: #eee !important;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+    color: #fff !important;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:focus ,.bootstrap-select.btn-group .dropdown-menu li a:active{
+    background-color: transparent !important;
+   
+}
+.rightContent{
+	display: block !important;
+}
+
+/*after Toggle sidebar*/
+
+
+#wrapper.toggled {
+	#sidebar-wrapper {
+		width: 3% !important;
+		overflow: visible;
+		animation-duration: 3s;
+		.form-group {
+			display: none;
+		}
+		.sidebar-nav {
+			.panel-title {
+				span {
+					display: none;
+				}
+				.fa.fa-chevron-down {
+					display: none;
+				}
+			}
+			.panel-heading {
+				padding: 7px;
+				text-align: center;
+			}
+			.tab-content {
+				margin: 30px 0;
+			}
+			.tab_div .tab_ul {
+				display: none;
+			}
+		}
+	}
+	.pcw {
+		width: 97% !important;
+	}
+}
+.galley-page-container .toggled .menu-toggle-button {
+	background-color: transparent !important;
+	width: auto !important;
+	height: auto !important;
+	left: 0.6% !important;
+	line-height: 0 !important;
+	font-size: 25px !important;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none !important;
+	top: 10px !important;
+}
+
+.galley-page-container .toggled .db_container.db_com.rightside-gallerycontainer-panel {
+	width: 976px;
+    margin: 0 auto !important;
+    float: none;
+}
+
+/*Select header*/
+.select_option .bootstrap-select {
+	width: 340px !important;
+	margin-right: 20px;
+}
+.btn-group > .btn:first-child {
+	margin-left: 0;
+	color: $color_shady_lady_approx !important;
+	background-color: $color_storm_dust_approx !important;
+	border: 1px solid $black;
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.text {
+    display: inline-block;
+    color: #A9A9A9 !important;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color:transparent !important;
+	outline: none !important;
+}

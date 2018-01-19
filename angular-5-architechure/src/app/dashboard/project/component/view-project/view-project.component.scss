@@ -1,0 +1,177 @@
+
+@import "../../../../../style/variables";
+
+
+
+
+#page-content-wrapper{
+    width: 82%;
+    position: relative;
+    padding: 15px;
+    float: right;
+    background: $color_storm_dust_approx;
+	height: calc(100vh - 114px);
+	overflow-x: hidden;
+	.container-fluid {
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;	
+		.preload{
+			text-align: center;
+			margin: 100px 0;
+		}
+	    #mainGrid{
+			.dataPagination{
+			    position: absolute;
+				top: 12px;
+				p{
+					text-align: center;
+					color: $white;
+					font-size: 12px;
+			    }
+		    }
+		    .shot_div_pagination{
+			    display: inline-block;
+				text-align: center;
+				color: $white;
+				font-size: 12px;
+				    a{
+					    color: $white !important;
+						font-size: 20px;
+						width: 25px;
+						height: 25px;
+						border-radius: 100%;
+						background-color: $color_shark_approx;
+						text-align: center;
+						line-height: 25px;
+						padding: 0;
+						box-shadow: 0 1px 3px 0 $black_30;
+						display: inline-block;
+						font-size: 12px;
+						padding: 3px;
+						&.firstpage{
+							position: relative;
+							left: -48px;
+						}
+						&.lastpage{
+							position: relative;
+							right: -73px;
+						}
+						i{
+							position: relative;
+							top: -2px;
+						}
+					}
+					.shot_div{
+					    display: inline-block;
+					}
+			}
+			.db_container{			
+					.st_subdiv{						
+						#imgList{
+							.img_div{
+								float: left !important;
+								margin: 5px 12px !important;
+								.span3{
+								    overflow: hidden;
+									box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+									background-color: $color_shark_approx;
+									padding: 1px;
+								    .imge{
+										border: 3px solid transparent;
+										a{   
+												padding: 0;
+												margin-bottom: 0;
+												border: none;
+												background-color: transparent !important;
+
+											img{
+											
+											}
+										}
+									}
+									.tile{
+										position: relative;
+										margin: 4% auto;
+										padding: 0;
+										width: 100%;
+										float: left;
+										h3{
+											color: #a9a9a9;
+											display: inline-block;
+											vertical-align: middle;
+											margin: 0;
+											font-size: 12px;
+											text-shadow: 1px 0 $black;
+											margin-left: 5px;
+										}
+										.float{
+											position: absolute;
+											display: inline-block;
+											width: 25px;
+											height: 25px;
+											line-height: 25px;
+											background-color: $color_prairie_sand_approx;
+											color: #fff;
+											cursor: pointer;
+											border-radius: 50px;
+											text-align: center;
+											z-index: 1000;
+											font-size: 14px;
+											right: 1%;
+											top: -13%;
+										}
+										.soc{
+										    right: 27px;
+											position: absolute;
+											top: -5%;
+											a{
+												color: $color_chicago_approx;
+												border-radius: 59%;
+												text-align: center;
+												width: 20px;
+												height: 20px;
+												line-height: 20px;
+												padding: 0;
+												font-size: 12px;
+												font-weight: bold;
+												display: inline-block;
+												position: relative;
+												top: 0;
+												right: 4px;
+												background-color: $color_star_dust_approx;
+											}
+											button{
+											    color: $color_chicago_approx;
+												border-radius: 59%;
+												text-align: center;
+												width: 20px;
+												height: 20px;
+												line-height: 20px;
+												padding: 0;
+												font-size: 12px;
+												font-weight: bold;
+												display: inline-block;
+												position: relative;
+												top: -1px;
+												right: 4px;
+												background-color: $color_star_dust_approx;
+											}
+										}
+									}
+								}
+							}
+						
+						}				
+					}
+					
+			}
+		}
+	
+	
+	
+	
+	}
+
+}

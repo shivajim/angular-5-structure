@@ -1,0 +1,2128 @@
+// //colors
+// $color_prairie_sand_approx: #9c3127;
+// $white: #fff;
+// $color_alto_approx: #ddd;
+// $black: #000;
+// $color_storm_dust_approx: #666;
+// $black_30: rgba(0,0,0,.3);
+// $color_fuscous_gray_approx: #535353;
+// $color_shark_approx: #292929;
+// $color_shady_lady_approx: #a9a9a9;
+// $color_cod_gray_approx: #0c0c0c;
+// $black_31: rgba(0,0,0,.31);
+// $black_16: rgba(0,0,0,.16);
+// $black_12: rgba(0,0,0,.12);
+// $color_tundora_approx: #444;
+// $color_cape_cod_approx: #404040;
+// $color_bombay_approx: #afb2b3;
+// $cyan_aqua: aqua;
+// $color_chicago_approx: #565656;
+// $color_star_dust_approx: #9f9f9f;
+// $color_celeste_approx: #ccc;
+// $color_black_haze_approx: #f7f7f7;
+// $color_cararra_approx: #ebebeb;
+// $black_20: rgba(0,0,0,.2);
+// $color_storm_dust_43_approx: rgba(102, 102, 102, 0.43);
+
+// //fonts
+// $font_0: Helvetica Neue;
+// $font_1: Helvetica;
+// $font_2: Arial;
+// $font_3: sans-serif;
+
+// //@extend-elements
+// //original selectors
+// //.st_headicon ul li:hover, .st_headicon ul li:focus
+// %extend_1 {
+// 	background-color: $black;
+// 	font-weight: 600;
+// 	border: none;
+// }
+
+// //original selectors
+// //.submenuItems li button.btn.btn-block.btn_admin:hover, button.btn.btn-block.btn_admin:visited
+// %extend_2 {
+// 	background-color: $black !important;
+// 	color: $white;
+// 	height: 27px;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// }
+
+// //original selectors
+// //.checkbox label:after, .radio label:after
+// %extend_3 {
+// 	content: '';
+// 	display: table;
+// 	clear: both;
+// }
+
+// //original selectors
+// //.checkbox .cr, .radio .cr
+// %extend_4 {
+// 	position: relative;
+// 	display: inline-block;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: .25em;
+// 	width: 1.1em;
+// 	height: 1.1em;
+// 	margin-right: .5em;
+// 	vertical-align: middle;
+// }
+
+// //original selectors
+// //.checkbox .cr .cr-icon, .radio .cr .cr-icon
+// %extend_5 {
+//     position: absolute;
+//     font-size: .7em;
+//     line-height: 0;
+//     top: 49.4%;
+//     left: 22%;
+// }
+
+// //original selectors
+// //.checkbox label input[type="checkbox"] +.cr >.cr-icon, .radio label input[type="radio"] +.cr >.cr-icon
+// %extend_6 {
+// 	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+// 	transform: scale(2) rotateZ(-20deg);
+// 	opacity: 0;
+// 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 	transition: all .1s ease-in;
+// }
+
+// //original selectors
+// //.di-check .chek-label .down-selectpic button:hover, .di-check .chek-label .down-selectpic button:focus
+// %extend_7 {
+// 	background-color: $color_cape_cod_approx;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	border: 2px solid $color_shark_approx;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: none;
+// 	color: $color_alto_approx;
+// }
+
+// //original selectors
+// //.down-selectpic .form-control .dropdown-menu .active a, .down-selectpic .form-control .dropdown-menu .active a:focus, .down-selectpic .form-control .dropdown-menu .active a:hover
+// %extend_8 {
+// 	background-color: $color_shady_lady_approx !important;
+// 	color: $color_shark_approx !important;
+// 	border: none !important;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: none;
+// }
+
+// //original selectors
+// //.modal-content .modal-body .mbody-btn:hover, .modal-content .modal-body .mbody-btn:focus
+// %extend_9 {
+// 	background-color: $color_shark_approx;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	border: 2px solid $color_shark_approx;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: none;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30;
+// }
+
+// //original selectors
+// //.modal-content .modal-footer button:hover, .modal-content .modal-footer button:focus
+// %extend_10 {
+// 	background-color: $color_cape_cod_approx;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	border: 2px solid $color_shark_approx;
+// }
+
+// //original selectors
+// //.modal-content .mf-btn button:hover, .modal-content .mf-btn button:focus
+// %extend_11 {
+// 	background-color: $color_prairie_sand_approx;
+// 	color: $white;
+// 	border: none;
+// }
+
+// //original selectors
+// //.psreport_div .modal-body .psreport-divtable .table td, .psreport_div .modal-body .psreport-divtable .table th
+// %extend_12 {
+// 	color: $color_alto_approx;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	font-size: 12px;
+// }
+
+// //original selectors
+// //.imreport_div .modal-body button:hover, .psreport_div .modal-body button:focus
+// %extend_13 {
+// 	background-color: $color_shark_approx;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	border: 2px solid $color_shark_approx;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: none;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30;
+// }
+
+// //original selectors
+// //.genimreport_div .modal-body .imreport-divtable .table td, .genimreport_div .modal-body .imreport-divtable .table th
+// %extend_14 {
+// 	color: $color_alto_approx;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	font-size: 12px;
+// }
+
+// //original selectors
+// //.curreport_div .modal-body .imreport-divtable .table td, .curreport_div .modal-body .imreport-divtable .table th
+// %extend_15 {
+// 	color: $color_alto_approx;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	font-size: 12px;
+// }
+
+// //original selectors
+// //.trareport_div .modal-body .trareport-divtable .table td, .trareport_div .modal-body .trareport-divtable .table th
+// %extend_16 {
+// 	color: $color_alto_approx;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	font-size: 12px;
+// }
+
+// //original selectors
+// //.adreport_div .modal-body .adreport-divtable .table td, .adreport_div .modal-body .adreport-divtable .table th
+// %extend_17 {
+// 	color: $color_alto_approx;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	font-size: 12px;
+// }
+
+// //original selectors
+// //.box_ch .checkbox, .radio
+// %extend_18 {
+// 	position: relative;
+// 	display: block;
+// 	margin-top: 0 !important;
+// 	margin-bottom: 0 !important;
+// }
+
+// //original selectors
+// //.reshorts .checkbox, .radio
+// %extend_19 {
+// 	position: relative;
+// 	display: block;
+// 	margin-top: 0 !important;
+// 	margin-bottom: 0 !important;
+// }
+
+
+// .db_com {
+// 	width: 100%;
+// 	float: left;
+// 	position: relative;
+// 	.iex-cont {
+// 		border: 1px solid;
+// 	}
+// 	.div_option {
+// 		border: 1px solid;
+// 		input[type="date"] {
+// 			background: $color_storm_dust_approx;
+// 			border: 1px solid $black;
+// 		}
+// 		.down-input label {
+// 			color: $color_alto_approx;
+// 		}
+// 	}
+// 	&.trareport-divtable {
+// 		height: 410px;
+// 		overflow-y: auto;
+// 	}
+// 	&.actorappr_div .modal-content .modal-body .down-selectpic {
+// 		width: 100% !important;
+// 	}
+// 	&.sidemod-com.permi-main1 {
+// 		width: 400px;
+// 		h6 {
+// 			color: $color_alto_approx;
+// 		}
+// 		button.pull-right {
+// 			margin-top: 15px;
+// 		}
+// 	}
+// }
+// .bcs {
+// 	background-color: $color_prairie_sand_approx;
+// }
+// .st_headicon {
+// 	text-align: right;
+// 	ul {
+// 		margin: 0;
+// 		padding: 0;
+// 		width: 100%;
+// 		list-style: none;
+// 		display: inline-block;
+// 		li {
+// 			display: inline-block;
+// 			list-style: none;
+// 			button {
+// 				text-decoration: none;
+// 				color: $color_alto_approx;
+// 				display: block;
+// 				padding: 10px;
+// 				background-color: transparent;
+// 				border-color: transparent;
+// 			}
+// 			a {
+// 				text-decoration: none;
+// 				color: $color_alto_approx;
+// 				display: block;
+// 				padding: 12px;
+// 			}
+// 			&:hover {
+// 				@extend %extend_1;
+// 			}
+// 			&:focus {
+// 				@extend %extend_1;
+// 			}
+// 		}
+// 	}
+// }
+// #wrapper {
+// 	overflow: hidden;
+// 	padding-left: 0;
+// 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 	transition: all 0.5s ease;
+// 	background-color: $color_storm_dust_approx;
+// }
+// #page-content-wrapper {
+// 	width: 82%;
+// 	position: relative;
+// 	padding: 15px;
+// 	float: right;
+
+// }
+// #sidebar-wrapper {
+// 	z-index: 1000;
+// 	position: relative;
+// 	width: 18%;
+// 	height:100vh;
+// 	float: left;
+// 	background-color: $color_fuscous_gray_approx;
+// 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 	transition: all 0.5s ease;
+// 	.form-group {
+// 		margin: 0;
+// 		padding: 09px;
+// 		background-color: $color_shark_approx;
+// 		button {
+// 			background-color: $color_fuscous_gray_approx;
+// 			border-color: $color_fuscous_gray_approx !important;
+// 			color: $color_shady_lady_approx !important;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0 !important;
+// 			width: 88% !important;
+// 		}
+// 	}
+// }
+// .sidebar-nav {
+// 	position: absolute;
+// 	top: 0;
+// 	width: 100%;
+// 	height:100vh;
+// 	margin: 0;
+// 	padding: 0;
+// 	list-style: none;
+// 	border-right: 2px solid $color_shark_approx;
+// 	li {
+// 		line-height: 40px;
+// 		width: 100%;
+// 		float: left;
+// 		a {
+// 			display: block;
+// 			text-decoration: none;
+// 			color: $color_shady_lady_approx;
+// 			padding-left: 15px;
+// 			padding-right: 15px;
+// 			&:focus {
+// 				outline:none;
+// 			}
+// 		}
+
+// 	}
+// }
+// .btn-group {
+// 	&.bootstrap-select.show-tick.form-control {
+// 		background-color: $color_shark_approx;
+// 	}
+// 	> .btn:first-child {
+// 		margin-left: 0;
+// 		color: $color_shady_lady_approx !important;
+// 		background-color: $color_storm_dust_approx !important;
+// 	}
+// }
+// .tab_div {
+// 	width: 100%;
+// 	float: left;
+// 	position: relative;
+// 	.tab_ul {
+// 		list-style: none;
+// 		display: inline-block;
+// 		padding: 0;
+// 		margin: 0 auto;
+// 		width: 100%;
+// 		background-color: $color_shark_approx;
+// 		li {
+// 			list-style: none;
+// 			display: inline-block;
+// 			float: none;
+// 			text-align: center;
+// 			width: 31.33%;
+// 			&:hover {
+// 				background-color: $color_fuscous_gray_approx;
+// 			}
+// 			a {
+// 				border: none;
+// 				color: $color_storm_dust_approx;
+// 				&:hover {
+// 					border-bottom: 3px solid $color_prairie_sand_approx;
+// 					color: $white;
+// 				}
+// 			}
+// 			&.active a {
+// 				border-bottom: 3px solid $color_prairie_sand_approx;
+// 				&:focus {
+// 					border-bottom: 3px solid $color_prairie_sand_approx;
+// 				}
+// 				&:hover {
+// 					border-bottom: 3px solid $color_prairie_sand_approx;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .tab-content {
+// 	width: 100%;
+// 	float: left;
+// 	position: relative;
+// 	margin: 0;
+// 	.side_dropdown {
+// 		padding: 15px 0;
+// 		.accordion-menu {
+// 			width: 100%;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 4px;
+// 			margin: 0;
+// 			padding: 0;
+// 			list-style: none;
+// 			.search_li {
+// 				display: none;
+// 			}
+// 			li {
+// 				list-style: none;
+// 				display: block;
+// 				line-height: 20px;
+// 				margin-bottom: 0;
+// 			}
+// 		}
+// 	}
+// 	.pinfo {
+// 		padding: 5px 10px;
+// 		h1 {
+// 			margin: 0;
+// 			padding: 20px 0;
+// 			text-transform: uppercase;
+// 			font-weight: normal;
+// 			letter-spacing: 2px;
+// 			font-size: 16px;
+// 		}
+// 		.info_div {
+// 			text-align: center;
+// 			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			box-shadow: 0 2px 5px 0 $black_16, 0 2px 10px 0 $black_12;
+// 			background-color: $color_tundora_approx;
+// 			.info-up {
+// 				overflow: hidden;
+// 				height: 100px;
+// 				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 				border-radius: .3rem .3rem 0 0;
+// 				background-color: $color_prairie_sand_approx;
+// 			}
+// 			.info_avatar {
+// 				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 				border-radius: 50%;
+// 				height: 100px;
+// 				width: 100px;
+// 				margin: -65px auto 0;
+// 				overflow: hidden;
+// 				text-align: center;
+// 				padding: 5px;
+// 				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				box-shadow: 0 2px 5px 0 $black_16, 0 2px 10px 0 $black_12;
+// 				background-color: $white;
+// 				img {
+// 					width: 100%;
+// 					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 					border-radius: 100%;
+// 					margin: 0 auto;
+// 				}
+// 			}
+// 			.info-body {
+// 				flex: 1 1 auto;
+// 				padding: 1.25rem;
+// 				position: relative;
+// 				text-align: center;
+// 				h4 {
+// 					margin-bottom: 1rem;
+// 					font-size: 1.5rem;
+// 					font-weight: 400;
+// 				}
+// 				hr {
+// 					border-top: 1px solid $color_storm_dust_approx;
+// 				}
+// 				p {
+// 					text-align: center;
+// 					i {
+// 						display: block;
+// 						margin-bottom: 10px;
+// 						color: $color_storm_dust_approx;
+// 					}
+// 					span {
+// 						display: block;
+// 						font-size: 12px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .tab-pane {
+// 	padding: 0;
+// 	color: $white;
+// }
+// .panel {
+// 	margin-bottom: 0;
+// 	background-color: transparent;
+// 	border: 1px solid transparent;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	&:hover {
+// 		background: $black_31;
+// 	}
+// 	a:hover {
+// 		text-decoration: none;
+// 	}
+// }
+// .panel-heading {
+// 	padding: 7px 10px;
+// 	color: $color_shady_lady_approx;
+// 	background-color: transparent;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 0 3px 0 $black_16, 0 2px 10px 0 $black_12;
+// 	text-decoration: none;
+// }
+// .panel-title {
+// 	margin-top: 0;
+// 	margin-bottom: 0;
+// 	font-size: 14px;
+// 	font-weight: bold;
+// 	color: inherit;
+// 	.fa.fa-chevron-down {
+// 		right: 10px;
+// 		left: auto;
+// 		position: absolute;
+// 		color: #a9a9a9;
+// 		display: inline-block;
+// 		margin-top: 3px;
+// 	}
+// }
+// .panel-body {
+// 	padding: 0 !important;
+// 	border: 1px solid #101010 !important;
+// }
+// .dp_i {
+// 	font-size: 12px;
+// 	line-height: 19px;
+// 	width: 20px;
+// 	height: 20px;
+// 	margin-right: 10px;
+// 	margin-left: 0;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 3px;
+// 	text-align: center;
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	border: 1px solid $color_shark_approx;
+// }
+// .submenuItems {
+// 	margin: 0;
+// 	padding: 10px 0;
+// 	list-style: none;
+// 	width: 100%;
+// 	float: left;
+// 	background: $black_31;
+// 	li {
+// 		list-style: none;
+// 		display: block;
+// 		line-height: 20px;
+// 		height: 27px;
+// 		color: $color_shady_lady_approx;
+// 		text-decoration: none;
+// 		margin-left: 6px;
+// 		button.btn.btn-block.btn_admin {
+// 			background-color: transparent;
+// 			display: block;
+// 			color: $color_shady_lady_approx;
+// 			padding: 4px 36px 0;
+// 			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 			transition: all 0.4s ease-out;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			font-size: 12px;
+// 			text-decoration: none;
+// 			text-align: left;
+// 			&:hover {
+// 				@extend %extend_2;
+// 			}
+// 			&:focus {
+// 				outline:none !important;
+// 			}
+// 		}
+// 	}
+// 	p {
+// 		color: $color_shady_lady_approx;
+// 		height: 27px;
+// 		margin: 10px 0;
+// 	}
+// }
+// li {
+// 	&.aud_btn {
+// 		margin: 6px;
+// 	}
+// 	&.items i {
+// 		width: 9%;
+// 		height: 73%;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 2px;
+// 		text-align: center;
+// 		background: $color_fuscous_gray_approx;
+// 		display: inline-block;
+// 		font-size: 10px;
+// 		border: 1px solid $color_shark_approx;
+// 		&:hover {
+// 			color: $color_prairie_sand_approx;
+// 		}
+// 	}
+// 	&.itemss i {
+// 		width: 9%;
+// 		height: 73%;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 2px;
+// 		text-align: center;
+// 		background: $color_fuscous_gray_approx !important;
+// 		display: inline-block;
+// 		font-size: 10px;
+// 		border: 1px solid $color_shark_approx;
+// 		margin-right: 8px;
+// 		&:hover {
+// 			color: $color_prairie_sand_approx;
+// 		}
+// 	}
+// }
+// .preload {
+// 	text-align: center;
+// 	margin: 100px 0;
+// }
+// .checkbox {
+// 	label {
+// 		&:after {
+// 			@extend %extend_3;
+// 		}
+// 		input[type="checkbox"] {
+// 			display: none;
+// 			+ .cr > .cr-icon {
+// 				@extend %extend_6;
+// 			}
+// 			&:checked + .cr > .cr-icon {
+// 				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+// 				transform: scale(1) rotateZ(0deg);
+// 				opacity: 1;
+// 			}
+// 			&:disabled + .cr {
+// 				opacity: .5;
+// 			}
+// 		}
+// 	}
+// 	.cr {
+// 		@extend %extend_4;
+// 		.cr-icon {
+// 			@extend %extend_5;
+// 		}
+// 	}
+// }
+// .radio {
+// 	@extend %extend_18;
+// 	@extend %extend_19;
+// 	label {
+// 		&:after {
+// 			@extend %extend_3;
+// 		}
+// 		input[type="radio"] {
+// 			display: none;
+// 			+ .cr > .cr-icon {
+// 				@extend %extend_6;
+// 			}
+// 			&:checked + .cr > .cr-icon {
+// 				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+// 				transform: scale(1) rotateZ(0deg);
+// 				opacity: 1;
+// 			}
+// 			&:disabled + .cr {
+// 				opacity: .5;
+// 			}
+// 		}
+// 	}
+// 	.cr {
+// 		@extend %extend_4;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 50%;
+// 		.cr-icon {
+// 			@extend %extend_5;
+// 			margin-left: 0.04em;
+// 		}
+// 	}
+// }
+// .down-input {
+// 	label {
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_shady_lady_approx;
+// 		vertical-align: middle;
+// 		padding-left: 0 !important;
+// 		font-size: 12px;
+// 	}
+// 	.cr {
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: inset 0 0 0 2px $color_shark_approx;
+// 		background-color: $color_storm_dust_approx;
+// 		.cr-icon {
+// 			color: $color_alto_approx;
+// 		}
+// 	}
+// }
+// .vertical-alignment-helper {
+// 	display: table;
+// 	height: 100%;
+// 	width: 100%;
+// }
+// .vertical-align-center {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// }
+// .modal-content {
+// 	width: inherit;
+// 	height: inherit;
+// 	margin: 0 auto;
+// 	.modal-com {
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 4px;
+// 		background-color: $color_fuscous_gray_approx;
+// 		h4 {
+// 			color: $color_alto_approx;
+// 			text-align: center;
+// 		}
+// 		.sgpage {
+// 			h5 {
+// 				text-align: left !important;
+// 				font-size: 12px !important;
+// 			}
+// 			label {
+// 				font-weight: 400 !important;
+// 			}
+// 		}
+// 		.modal-header h4 span {
+// 			color: $color_prairie_sand_approx;
+// 			font-size: 14px;
+// 		}
+// 	}
+// 	.sidemod-com {
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 4px;
+// 		background-color: $color_fuscous_gray_approx;
+// 	}
+// 	.modal-header {
+// 		border-bottom: 2px solid $color_shark_approx;
+// 		background-color: $color_storm_dust_approx;
+// 		color: $color_alto_approx;
+// 		.close {
+// 			width: 25px;
+// 			height: 25px;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 100%;
+// 			background-color: $color_bombay_approx;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: none;
+// 			opacity: 1;
+// 			&:focus {
+// 				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				box-shadow: none;
+// 				outline: none;
+// 			}
+// 		}
+// 	}
+// 	.modal-body {
+// 		.form-group {
+// 			margin: 0;
+// 			input {
+// 				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 				background-color: $color_storm_dust_approx;
+// 				border: none;
+// 				color: $color_alto_approx;
+// 				&:focus {
+// 					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 					box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 					border-color: $color_shark_approx;
+// 				}
+// 			}
+// 		}
+// 		button {
+// 			background-color: $color_prairie_sand_approx;
+// 			color: $white;
+// 			border: none;
+// 			padding: 7px 10px;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 3px;
+// 		}
+// 		.mbody-btn {
+// 			background-color: $color_shark_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 2px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			text-transform: none;
+// 			font-size: 12px;
+// 			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			box-shadow: 0 1px 3px 0 $black_30;
+// 			&:hover {
+// 				@extend %extend_9;
+// 			}
+// 			&:focus {
+// 				@extend %extend_9;
+// 			}
+// 		}
+// 		.down-selectpic {
+// 			display: inline-block;
+// 			vertical-align: middle;
+// 			margin: 0;
+// 			padding: 7px 0;
+// 			.form-control {
+// 				height: auto;
+// 				.dropdown-menu {
+// 					background-color: $color_cape_cod_approx;
+// 					margin: 0 !important;
+// 					li a {
+// 						color: $color_alto_approx;
+// 						&:hover {
+// 							background-color: $color_tundora_approx;
+// 						}
+// 						&:focus {
+// 							background-color: $color_tundora_approx;
+// 						}
+// 					}
+// 				}
+// 			}
+// 			button {
+// 				padding: 0 28px;
+// 				background-color: $color_cape_cod_approx;
+// 				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 				border-radius: 0;
+// 				border: 1px solid $color_shark_approx;
+// 				color: $color_alto_approx;
+// 				margin: 0 !important;
+// 			}
+// 		}
+// 	}
+// 	.modal-footer {
+// 		border-top: 2px solid $color_shark_approx;
+// 		button {
+// 			background-color: $color_cape_cod_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 2px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			text-transform: uppercase;
+// 			&:hover {
+// 				@extend %extend_10;
+// 			}
+// 			&:focus {
+// 				@extend %extend_10;
+// 			}
+// 		}
+// 	}
+// 	.mf-btn button {
+// 		background-color: $color_prairie_sand_approx;
+// 		color: $white;
+// 		border: none;
+// 		padding: 7px 10px;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 3px;
+// 		&:hover {
+// 			@extend %extend_11;
+// 		}
+// 		&:focus {
+// 			@extend %extend_11;
+// 		}
+// 	}
+// }
+// h5 {
+// 	color: $color_alto_approx;
+// 	text-align: center;
+// 	&.add_bottom_line {
+// 		padding-left: 21px !important;
+// 		color: $white;
+// 	}
+// }
+// .email_div {
+// 	.email_cont {
+// 		margin-bottom: 10px;
+// 		h5 {
+// 			margin: 0;
+// 			color: $color_alto_approx;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 		}
+// 	}
+// 	.modal-body {
+// 		padding: 20px 15px;
+// 		.to_div {
+// 			margin: 15px 0;
+// 			textarea {
+// 				resize: none;
+// 				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 				background-color: $color_storm_dust_approx;
+// 				border: none;
+// 				color: $color_alto_approx;
+// 				&:focus {
+// 					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 					box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 					border-color: $color_shark_approx;
+// 				}
+// 			}
+// 		}
+// 		.download_img {
+// 			width: 29%;
+// 			display: inline-block;
+// 			vertical-align: middle;
+// 			margin: 0 10px 10px 0;
+// 			img {
+// 				max-width: 100%;
+// 				display: block;
+// 				width: 100%;
+// 			}
+// 			h5 {
+// 				margin: 0;
+// 				padding: 10px 0;
+// 				color: $white;
+// 				text-align: center;
+// 			}
+// 		}
+// 		.img_file {
+// 			margin-top: 30px;
+// 		}
+// 		.down-input {
+// 			text-align: center;
+// 		}
+// 		.di-check {
+// 			text-align: left;
+// 			margin-bottom: 15px;
+// 		}
+// 	}
+// }
+// .img_file {
+// 	border: 1px solid $color_shark_approx;
+// }
+// .advseach-div {
+// 	.serach-container {
+// 		width: 20%;
+// 		display: inline-block;
+// 		vertical-align: top;
+// 		position: relative;
+// 		padding: 0 10px;
+// 		float: left;
+// 	}
+// 	.seach_cont {
+// 		margin-bottom: 15px;
+// 		h2 {
+// 			margin: 0 0 10px 0;
+// 			font-size: 14px;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 		}
+// 		.down-input {
+// 			width: 100%;
+// 			float: left;
+// 			label .tags-count {
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 			}
+// 		}
+// 		.di-check .chek-label {
+// 			padding-left: 0 !important;
+// 		}
+// 	}
+// 	.modal-body {
+// 		.serach-container {
+// 			.check-batch {
+// 				width: 40%;
+// 			}
+// 			.form-group {
+// 				width: 60%;
+// 				float: left;
+// 			}
+// 		}
+// 		.form-group input {
+// 			height: 25px;
+// 		}
+// 	}
+// }
+// .fsdownload_div {
+// 	.gtpage {
+// 		margin-bottom: 20px;
+// 		h4 {
+// 			margin: 0;
+// 			padding: 5px 0;
+// 		}
+// 		.download_img {
+// 			margin: 0;
+// 			img {
+// 				max-width: 100%;
+// 				display: block;
+// 				width: 100%;
+// 			}
+// 			h5 {
+// 				margin: 0;
+// 				padding: 10px 0;
+// 				color: $white;
+// 				text-align: center;
+// 			}
+// 		}
+// 	}
+// 	.modal-body .down-input label {
+// 		padding-left: 0 !important;
+// 	}
+// }
+// .printtool_div {
+// 	.printtool-cont {
+// 		margin-bottom: 5px;
+// 		h4 {
+// 			vertical-align: middle;
+// 			display: inline-block;
+// 			margin: 0;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 			font-size: 14px;
+// 			padding: 7px 0;
+// 		}
+// 		p {
+// 			color: $color_alto_approx;
+// 			font-size: 14px;
+// 			padding: 7px 0;
+// 			margin: 0;
+// 		}
+// 		.down-input {
+// 			margin: 5px 0;
+// 			label {
+// 				color: $color_alto_approx;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 			}
+// 		}
+// 	}
+// 	.email-inp {
+// 		margin-top: 10px;
+// 		button {
+// 			padding: 5px 10px;
+// 		}
+// 	}
+// 	.printbtn {
+// 		margin: 10px 0;
+// 		button {
+// 			background-color: $color_shark_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 2px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			text-transform: uppercase;
+// 			width: 49%;
+// 			float: left;
+// 			i {
+// 			}
+// 		}
+// 		.btn_downl {
+// 			margin-right: 6px;
+// 		}
+// 	}
+// 	.print-imgcontainer {
+// 		background-color: $color_tundora_approx;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30;
+// 		min-height: 715px;
+// 		padding: 15px 0;
+// 		.printtool-cont {
+// 			h4 {
+// 				font-weight: 600;
+// 				span {
+// 					font-weight: normal;
+// 				}
+// 			}
+// 			p {
+// 				font-size: 20px;
+// 			}
+// 		}
+// 		.printtool-img {
+// 			margin: 15px 0;
+// 			.download_img {
+// 				width: 31%;
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 				margin: 0 10px 10px 0;
+// 				float: left;
+// 				img {
+// 					max-width: 100%;
+// 					display: block;
+// 					width: 100%;
+// 				}
+// 				h5 {
+// 					margin: 0;
+// 					padding: 10px 0;
+// 					color: $white;
+// 					text-align: center;
+// 				}
+// 			}
+// 		}
+// 		.printbott-div {
+// 			width: 100%;
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 0;
+// 			h4 {
+// 				font-weight: normal;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 				color: $color_alto_approx;
+// 				font-size: 14px;
+// 				text-align: left;
+// 			}
+// 			p {
+// 				color: $color_alto_approx;
+// 				font-size: 14px;
+// 				padding: 7px 0;
+// 				margin: 0;
+// 			}
+// 		}
+// 	}
+// 	.modal-body .form-group input {
+// 		height: 25px;
+// 	}
+// }
+// .modal {
+// 	.modal-psreport {
+// 		width: 90%;
+// 	}
+// 	&.left .modal-dialog {
+// 		left: -27%;
+// 		top: 240px;
+// 		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+// 		transform: translate3d(0%, 0, 0);
+// 	}
+// }
+// .permis-container {
+// 	max-height: 275px;
+// 	overflow-y: auto;
+// 	background-color: $color_tundora_approx;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30;
+// }
+// .permi-main {
+// 	h5 {
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		font-size: 15px;
+// 		font-weight: 600;
+// 	}
+// 	button {
+// 		margin-top: 16px;
+// 	}
+// }
+// .check_r {
+// 	text-align: center;
+// 	label {
+// 		padding-left: 0;
+// 	}
+// 	.cr {
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: inset 0 0 0 2px $color_shark_approx;
+// 		background-color: $color_storm_dust_approx;
+// 		.cr-icon {
+// 			color: $color_alto_approx;
+// 		}
+// 	}
+// }
+// .ffl_div {
+// 	margin: 10px 0;
+// 	.div_flist {
+// 		overflow-y: auto;
+// 		background-color: $color_tundora_approx;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30;
+// 		.filter_imgs {
+// 			height: 420px;
+// 			p {
+// 				text-align: center;
+// 				color: $color_alto_approx;
+// 			}
+// 		}
+// 	}
+// }
+// .div_btn {
+// 	margin-left: 15px!important;
+// 	float: left;
+// 	margin-top: 18px !important;
+// 	margin-left: 15px !important;
+// 	button {
+// 		margin-right: 5px;
+// 		width: 75px !important;
+// 		padding: 7px 5px !important;
+// 	}
+// }
+// .sfl_div {
+// 	margin: 10px 0;
+// 	.div_slist {
+// 		overflow-y: auto;
+// 		background-color: $color_tundora_approx;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30;
+// 		.selected_imgs {
+// 			min-height: 420px;
+// 			p {
+// 				text-align: center;
+// 				color: $color_alto_approx;
+// 			}
+// 		}
+// 	}
+// }
+// .div_iex {
+// 	p {
+// 		text-align: center;
+// 		color: $color_alto_approx !important;
+// 	}
+// 	h4 {
+// 		text-align: left!important;
+// 	}
+// 	h5 {
+// 		color: $color_alto_approx;
+// 	}
+// }
+// .tagg-view-cont {
+// 	h6 {
+// 		color: $color_alto_approx !important;
+// 	}
+// 	label {
+// 		padding: 4px 0;
+// 		background: $cyan_aqua;
+// 		text-align: center;
+// 		width: 100%;
+// 	}
+// 	button.mbody-btn {
+// 		width: 100%;
+// 	}
+// }
+// .psreport_div {
+// 	.modal-body {
+// 		.psreport-p {
+// 			h3 {
+// 				margin: 0 0 10px 0;
+// 				font-weight: 600;
+// 				font-size: 16px;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 				color: $color_alto_approx;
+// 				span {
+// 					font-weight: normal;
+// 					font-size: 14px;
+// 				}
+// 			}
+// 			p {
+// 				font-size: 11px;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 				color: $color_alto_approx;
+// 			}
+// 		}
+// 		.psreport-value {
+// 			padding-top: 30px;
+// 		}
+// 		.psreport-datetime {
+// 			text-align: center;
+// 			padding: 30px 0;
+// 			p {
+// 				font-size: 13px;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 				color: $color_alto_approx;
+// 			}
+// 		}
+// 		.psreport-divtable .table {
+// 			td {
+// 				@extend %extend_12;
+// 			}
+// 			th {
+// 				@extend %extend_12;
+// 			}
+// 		}
+// 		button:focus {
+// 			@extend %extend_13;
+// 		}
+// 	}
+// 	.modal-footer button {
+// 		background-color: $color_shark_approx;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 0;
+// 		border: 2px solid $color_shark_approx;
+// 		color: $color_alto_approx;
+// 		padding: 7px 25px;
+// 		text-transform: none;
+// 		margin-right: 10px;
+// 	}
+// }
+// .imreport_div {
+// 	.imreport-cont h3 {
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		font-size: 14px;
+// 		margin: 0 0 15px 0;
+// 	}
+// 	.modal-body button {
+// 		background-color: $color_shark_approx;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 0;
+// 		border: 2px solid $color_shark_approx;
+// 		color: $color_alto_approx;
+// 		padding: 7px 0;
+// 		text-transform: none;
+// 		margin-right: 10px;
+// 		width: 100%;
+// 		float: left;
+// 		font-size: 12px;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30;
+// 		&:hover {
+// 			@extend %extend_13;
+// 		}
+// 	}
+// }
+// .genicreport_div {
+// 	.modal-body {
+// 		min-height: 500px;
+// 		.genicreport-abso {
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 0;
+// 			width: 100%;
+// 		}
+// 	}
+// 	.gen_icreport_cont {
+// 		margin-bottom: 15px;
+// 		h5 {
+// 			margin: 0;
+// 			font-size: 12px;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 			display: inline-block;
+// 			vertical-align: middle;
+// 			padding: 8px 0;
+// 		}
+// 	}
+// }
+// .iiftag_div {
+// 	.iiftag {
+// 		.form-group {
+// 			h5 {
+// 				margin: 0;
+// 				font-size: 12px;
+// 				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				text-shadow: 1px 0 $black;
+// 				color: $color_alto_approx;
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 			}
+// 			input {
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 				width: 70%;
+// 			}
+// 		}
+// 		button {
+// 			background-color: $color_shark_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 2px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			text-transform: none;
+// 			font-size: 12px;
+// 			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			box-shadow: 0 1px 3px 0 $black_30;
+// 		}
+// 	}
+// 	.iiftag_cont {
+// 		background-color: $color_tundora_approx;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30;
+// 		min-height: 290px;
+// 		margin: 15px 0;
+// 		padding: 15px;
+// 		h3 {
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 			margin: 0 0 15px 0;
+// 			font-size: 16px;
+// 		}
+// 		p {
+// 			text-align: center;
+// 			font-size: 12px;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 		}
+// 	}
+// 	.modal-body {
+// 		h4 {
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 			font-size: 14px;
+// 			margin: 0;
+// 			padding: 8px 0;
+// 		}
+// 		.down-selectpic {
+// 			width: 100%;
+// 			display: block;
+// 		}
+// 	}
+// }
+// .foxaechive_div {
+// 	h5 {
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		font-size: 14px;
+// 		margin: 10px 0 5px;
+// 		width: 100%;
+// 		float: left;
+// 	}
+// 	.form-group {
+// 		margin-bottom: 10px;
+// 	}
+// 	.modal-body .down-selectpic {
+// 		display: inline-block;
+// 		vertical-align: middle;
+// 		margin: 0;
+// 		padding: 7px 0;
+// 		.form-control {
+// 			height: 34px;
+// 			.dropdown-menu {
+// 				background-color: $color_cape_cod_approx;
+// 				margin: 0 !important;
+// 			}
+// 		}
+// 		button {
+// 			padding: 0 28px;
+// 			background-color: $color_cape_cod_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 1px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			margin: 0 !important;
+// 			height: 34px;
+// 		}
+// 	}
+// }
+// .unfinalization_div {
+// 	h3 {
+// 		margin: 0 0 10px 0;
+// 		font-size: 16px;
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		text-align: center;
+// 	}
+// 	.modal-body .down-selectpic {
+// 		display: inline-block;
+// 		vertical-align: middle;
+// 		margin: 0;
+// 		padding: 7px 0;
+// 		.form-control {
+// 			height: 34px;
+// 			.dropdown-menu {
+// 				background-color: $color_cape_cod_approx;
+// 				margin: 0 !important;
+// 			}
+// 		}
+// 		button {
+// 			padding: 0 28px;
+// 			background-color: $color_cape_cod_approx;
+// 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 			border-radius: 0;
+// 			border: 1px solid $color_shark_approx;
+// 			color: $color_alto_approx;
+// 			margin: 0 !important;
+// 			height: 34px;
+// 		}
+// 	}
+// }
+// .sendemailnoti_div {
+// 	h5 {
+// 		margin: 0;
+// 		font-size: 14px;
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		text-align: left;
+// 		padding: 7px 0;
+// 	}
+// 	.modal-body .form-group {
+// 		margin: 10px 0;
+// 		textarea {
+// 			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 			background-color: $color_storm_dust_approx;
+// 			border: none;
+// 			color: $color_alto_approx;
+// 			width: 100%;
+// 			min-height: 170px;
+// 			resize: none;
+// 			&:focus {
+// 				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 				box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 				border-color: $color_shark_approx;
+// 			}
+// 		}
+// 	}
+// }
+// .db_container {
+// 	margin: 0 !important;
+// }
+// .img_div {
+// 	float: left !important;
+// 	margin: 5px 0 !important;
+// }
+// .imge {
+// 	border: 3px solid transparent;
+// }
+// .tile {
+// 	position: relative;
+// 	margin: 4% auto;
+// 	padding: 0;
+// 	width: 100%;
+// 	float: left;
+// 	h3 {
+// 		color: $color_shady_lady_approx;
+// 		display: inline-block;
+// 		vertical-align: middle;
+// 		margin: 0;
+// 		font-size: 12px;
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		margin-left: 5px;
+// 	}
+// }
+// .soc {
+// 	right: 27px;
+// 	position: absolute;
+// 	top: -10%;
+// 	a {
+// 		color: $color_chicago_approx;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 59%;
+// 		text-align: center;
+// 		width: 20px;
+// 		height: 20px;
+// 		line-height: 20px;
+// 		padding: 0;
+// 		font-size: 12px;
+// 		font-weight: bold;
+// 		display: inline-block;
+// 		position: relative;
+// 		top: 0;
+// 		right: 4px;
+// 		background-color: $color_star_dust_approx;
+// 	}
+// 	button {
+// 		color: $color_chicago_approx;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 59%;
+// 		text-align: center;
+// 		width: 20px;
+// 		height: 20px;
+// 		line-height: 20px;
+// 		padding: 0;
+// 		font-size: 12px;
+// 		font-weight: bold;
+// 		display: inline-block;
+// 		position: relative;
+// 		top: 0;
+// 		right: 4px;
+// 		background-color: $color_star_dust_approx;
+// 	}
+// }
+// .float {
+// 	position: absolute;
+// 	display: inline-block;
+// 	width: 25px;
+// 	height: 25px;
+// 	line-height: 25px;
+// 	background-color: $color_prairie_sand_approx;
+// 	color: $white;
+// 	cursor: pointer;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 50px;
+// 	text-align: center;
+// 	z-index: 1000;
+// 	font-size: 14px;
+// 	right: 1%;
+// 	top: -25%;
+// }
+// .save_cap {
+// 	&.db_com button.pull-right {
+// 		background-color: $color_prairie_sand_approx;
+// 		color: $white;
+// 		border: none;
+// 		padding: 6px 46px;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 3px;
+// 		margin: 6px 0;
+// 	}
+// 	.down-input label {
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_alto_approx;
+// 		vertical-align: middle;
+// 		padding-left: 0 !important;
+// 		font-size: 14px;
+// 	}
+// }
+// .imreport-cont {
+// 	margin: 0 10px;
+// 	h5 {
+// 		text-align: left;
+// 	}
+// }
+// .cap_btns {
+// 	margin: 0 10px;
+// 	button {
+// 		background-color: $color_shark_approx !important;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 0;
+// 		border: 2px solid $color_shark_approx !important;
+// 		color: $color_alto_approx !important;
+// 		font-size: 12px;
+// 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		box-shadow: 0 1px 3px 0 $black_30 !important;
+// 		padding: 7px 0 !important;
+// 		text-transform: none;
+// 		margin-right: 10px;
+// 		width: 100% !important;
+// 		float: left;
+// 	}
+// }
+// .cap_reporte {
+// 	border: 1px solid;
+// 	padding-bottom: 10px;
+// }
+// .sel_cap {
+// 	.btn-group.bootstrap-select.form-control {
+// 		border: 1px solid !important;
+// 		background-color: $color_fuscous_gray_approx !important;
+// 	}
+// 	button.btn.dropdown-toggle.bs-placeholder.btn-default {
+// 		border: 1px solid $color_shark_approx !important;
+// 	}
+// 	.dropdown-menu > li > a {
+// 		display: block;
+// 		padding: 3px 20px;
+// 		clear: both;
+// 		font-weight: 400;
+// 		line-height: 1.42857143;
+// 		color: $color_celeste_approx;
+// 		white-space: nowrap;
+// 	}
+// }
+// .popover-title {
+// 	padding: 8px 14px;
+// 	margin: 0;
+// 	font-size: 14px;
+// 	background-color: $color_black_haze_approx;
+// 	border-bottom: 1px solid $color_cararra_approx;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 5px 5px 0 0;
+// 	text-align: center;
+// 	color: $color_shady_lady_approx;
+// }
+// .popover {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 1060;
+// 	display: none;
+// 	max-width: 276px;
+// 	padding: 1px;
+// 	font-family: $font_0, $font_1, $font_2, $font_3;
+// 	font-size: 14px;
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	line-height: 1.42857143;
+// 	text-align: left;
+// 	text-align: start;
+// 	text-decoration: none;
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: none;
+// 	text-transform: none;
+// 	letter-spacing: normal;
+// 	//Instead of the line below you could use @include word-break($value)
+// 	word-break: normal;
+// 	word-spacing: normal;
+// 	word-wrap: normal;
+// 	white-space: normal;
+// 	background-color: $color_fuscous_gray_approx !important;
+// 	//Instead of the line below you could use @include background-clip($clip)
+// 	background-clip: padding-box;
+// 	border: 1px solid $color_celeste_approx;
+// 	border: 1px solid $black_20;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 6px;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 5px 10px $black_20;
+// }
+// .shot_div {
+// 	display: inline-block;
+// }
+// .selectpicker {
+// 	display: block !important;
+// }
+// .breadcrumb_container_section .breadcrumb {
+// 	margin-bottom: 0;
+// 	background-color: transparent;
+// 	padding: 8px 0 !important;
+// 	li {
+// 		line-height: 24px;
+// 		font-size: 14px;
+// 		color: $white;
+// 		a {
+// 			color: $white;
+// 		}
+// 	}
+// }
+// .galley-page-container .menu-toggle-button {
+// 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 	transition: all 0.5s ease;
+// 	display: inline-block;
+// 	position: absolute;
+// 	left: 15.7%;
+// 	width: 27px;
+// 	height: 27px;
+// 	z-index: 1001;
+// 	line-height: 27px;
+// 	font-size: 24px;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30;
+// 	text-align: center;
+// 	top: 14px;
+// 	i {
+// 		color: $color_prairie_sand_approx;
+// 	}
+// }
+// .form-group.customfilter-selectbox-container .dropdown-menu.open {
+// 	background-color: $color_cod_gray_approx !important;
+// 	max-height: 320px !important;
+// }
+// a:focus {
+// 	text-decoration: none;
+// }
+// #collapse2 ul li {
+// 	margin: 0;
+// }
+// button.btn.btn-block.btn_admin:visited {
+// 	@extend %extend_2;
+// }
+// i.fa.fa-folder-o {
+// 	margin-right: 6px;
+// }
+// #collapse4 ul li a {
+// 	padding-left: 31px;
+// }
+// .aud_btn button.btn {
+// 	background-color: $color_prairie_sand_approx;
+// 	margin: 6px 4px;
+// 	color: $color_shady_lady_approx;
+// 	width: 90%;
+// 	height: 92%;
+// 	border: 1px solid $color_shark_approx;
+// 	padding: 2px 0;
+// 	font-size: 12px;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// }
+// .di-check .chek-label .down-selectpic {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	margin: 0;
+// 	.form-control {
+// 		height: auto;
+// 		.dropdown-menu {
+// 			background-color: $color_cape_cod_approx;
+// 			li a {
+// 				color: $color_alto_approx;
+// 			}
+// 		}
+// 	}
+// 	button {
+// 		padding: 0 28px;
+// 		background-color: $color_cape_cod_approx;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 0;
+// 		border: 2px solid $color_shark_approx;
+// 		color: $color_alto_approx;
+// 		&:hover {
+// 			@extend %extend_7;
+// 		}
+// 		&:focus {
+// 			@extend %extend_7;
+// 		}
+// 	}
+// }
+// .down-selectpic .form-control .dropdown-menu .active a {
+// 	@extend %extend_8;
+// 	&:focus {
+// 		@extend %extend_8;
+// 	}
+// 	&:hover {
+// 		@extend %extend_8;
+// 	}
+// }
+// .goto_div .gtpage {
+// 	margin-bottom: 20px;
+// 	h4 {
+// 		margin: 0;
+// 		padding: 5px 0;
+// 		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 		text-shadow: 1px 0 $black;
+// 		color: $color_shady_lady_approx;
+// 	}
+// }
+// .viewtool_div .modal-body .viewtool-cont .down-selectpic {
+// 	width: 100%;
+// 	float: left;
+// 	h6 {
+// 		font-size: 14px;
+// 		text-align: center;
+// 		color: $color_alto_approx;
+// 	}
+// }
+// .deletool-cont h5 {
+// 	text-align: left;
+// 	color: $color_alto_approx;
+// }
+// .dotool-cont h5 {
+// 	text-align: left;
+// 	color: $color_alto_approx;
+// }
+// .permis p {
+// 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	text-shadow: 1px 0 $black;
+// 	color: $color_alto_approx;
+// 	font-size: 12px;
+// }
+// .iex-cont input {
+// 	height: 25px !important;
+// }
+// .taggview1_div .tagg-view-cont {
+// 	.mbody-btn {
+// 		padding: 4px 10px;
+// 	}
+// 	.tag_div {
+// 		margin-bottom: 15px;
+// 	}
+// }
+// .genimreport_div .modal-body .imreport-divtable .table {
+// 	td {
+// 		@extend %extend_14;
+// 	}
+// 	th {
+// 		@extend %extend_14;
+// 	}
+// }
+// .curreport_div .modal-body .imreport-divtable .table {
+// 	td {
+// 		@extend %extend_15;
+// 	}
+// 	th {
+// 		@extend %extend_15;
+// 	}
+// }
+// .trareport_div .modal-body .trareport-divtable .table {
+// 	td {
+// 		@extend %extend_16;
+// 	}
+// 	th {
+// 		@extend %extend_16;
+// 	}
+// }
+// .adreport_div .modal-body {
+// 	.adreport-p {
+// 		margin-bottom: 15px;
+// 		h3 {
+// 			margin: 0 0 10px 0;
+// 			font-weight: 600;
+// 			font-size: 16px;
+// 			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 			text-shadow: 1px 0 $black;
+// 			color: $color_alto_approx;
+// 			span {
+// 				font-weight: normal;
+// 				font-size: 14px;
+// 			}
+// 		}
+// 	}
+// 	.mbody-btn {
+// 		width: 100%;
+// 	}
+// 	.adreport-divtable .table {
+// 		td {
+// 			@extend %extend_17;
+// 		}
+// 		th {
+// 			@extend %extend_17;
+// 		}
+// 	}
+// }
+// .st_subdiv .span3 {
+// 	overflow: hidden;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30;
+// 	background-color: $color_shark_approx;
+// 	padding: 1px;
+// 	.thumbnail {
+// 		padding: 0;
+// 		margin-bottom: 0;
+// 		border: none;
+// 		background-color: transparent;
+// 		img {
+// 			display: block;
+// 			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+// 			transition: all 1s ease;
+// 			border: 2x solid transparent;
+// 		}
+// 	}
+// }
+// .cap_cont .nav_img p {
+// 	padding: 7px 10px;
+// 	font-size: 14px;
+// 	color: $color_alto_approx;
+// 	text-align: right;
+// 	label {
+// 		font-weight: 500 !important;
+// 	}
+// }
+// .option_cap.db_com {
+// 	margin: 14px 0;
+// }
+// .zoome button {
+// 	background-color: $color_prairie_sand_approx !important;
+// 	color: $white !important;
+// 	border: none !important;
+// 	padding: 7px 25px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 3px !important;
+// }
+// textarea.form-control {
+// 	height: auto;
+// 	background-color: $color_storm_dust_approx;
+// 	border: 1px solid $color_shark_approx;
+// 	color: $color_shady_lady_approx;
+// }
+// .div_shots button {
+// 	background-color: $color_storm_dust_43_approx !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	border: 1px solid $color_shark_approx !important;
+// 	color: $color_alto_approx !important;
+// 	font-size: 12px;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30 !important;
+// 	padding: 5px 0 !important;
+// 	text-transform: none;
+// 	margin: 5px 32px 8px 0;
+// 	width: 100% !important;
+// }
+// .adpage input {
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 	background-color: $color_storm_dust_approx;
+// 	border: none;
+// 	color: $color_alto_approx;
+// 	height: 100%;
+// }
+// .add_bte button {
+// 	background-color: $color_prairie_sand_approx !important;
+// 	border: none !important;
+// 	padding: 7px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 3px !important;
+// 	margin-bottom: 7px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	color: $color_alto_approx !important;
+// 	font-size: 12px;
+// 	padding: 5px 0 !important;
+// 	text-transform: none;
+// 	margin-right: 11px 0;
+// 	margin: 5px;
+// 	width: 28% !important;
+// }
+// .edpage input {
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: inset 0 0 0 1px $color_shark_approx;
+// 	background-color: $color_storm_dust_approx;
+// 	border: none;
+// 	color: $color_alto_approx;
+// 	height: 100%;
+// }
+// .ede_bte button {
+// 	background-color: $color_prairie_sand_approx !important;
+// 	color: $white !important;
+// 	border: none !important;
+// 	padding: 7px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 3px !important;
+// 	margin-bottom: 7px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	font-size: 12px;
+// 	padding: 5px 0 !important;
+// 	text-transform: none;
+// 	margin-right: 11px 0;
+// 	margin: 5px;
+// 	width: 28% !important;
+// }
+// .box_ch .checkbox {
+// 	@extend %extend_18;
+// }
+// .reshorts .checkbox {
+// 	@extend %extend_19;
+// }
+// .rme_bte button {
+// 	background-color: $color_prairie_sand_approx !important;
+// 	color: $white !important;
+// 	border: none !important;
+// 	padding: 7px !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 3px !important;
+// 	margin-bottom: 7px !important;
+// 	width: 46% !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0;
+// 	font-size: 12px;
+// 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+// 	box-shadow: 0 1px 3px 0 $black_30 !important;
+// 	text-transform: none;
+// 	margin-right: 11px 0;
+// 	margin: 5px;
+// }
+
+// .control-sidebar {
+// 	position: absolute;
+//     z-index: 1010;
+//     background: #535353 !important;
+// 	border: 2px solid #292929;
+// 	top: 113px;
+//     min-height: 520px;
+//     right: 0;
+//     width: 230px;
+//     -webkit-transition: right .3s ease-in-out;
+//     transition: right .3s ease-in-out;
+// 	.closebtn {
+// 		color: $color_alto_approx;
+// 		font-size: 30px;
+// 		text-decoration: none;
+// 	}
+// 	.heading{
+// 	 p {
+// 		margin: 9px 0 0;
+// 		color: $color_alto_approx;
+// 		font-weight: bold;
+// 		letter-spacing: 2px;
+// 	}
+// 	.imginfo1 {
+// 		margin-bottom: 0 !important;
+// 		float: left;
+// 		width: 100%;
+// 		background-color: $color_shark_approx;
+// 	}
+// }
+// 	.nav-tabs > li.active > a {
+// 		border-bottom: 2px solid $color_prairie_sand_approx !important;
+// 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 		border-radius: 0 0 !important;
+// 		border-right: $color_shark_approx !important;
+// 		border-top: $color_shark_approx !important;
+// 		border-left: $color_shark_approx !important;
+// 		background-color: $color_shark_approx !important;
+// 	}
+	
+// 	> .tab-content {
+// 		padding: 10px 15px;
+// 		p {
+// 			margin: 5px 0 0;
+// 			font-size: 12px;
+// 			color: $color_shady_lady_approx;
+// 		}
+// 	}
+// }
+// .tab-pane {
+// 	.textarea.form-control {
+// 		height: auto;
+// 		background-color: $color_storm_dust_approx;
+// 		border: 1px solid $color_shark_approx;
+// 		color: $color_shady_lady_approx;
+// 	}
+// }
+// .nav-tabs.nav-justified > li > a {
+// 	border: none !important;
+// 	color: $color_alto_approx !important;
+// 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+// 	border-radius: 0 0 !important;
+// 	background-color: $color_shark_approx;
+// }
+// #control-sidebar-settings-tab .divider {
+// 	border-bottom: solid thin $black;
+// }
+// #control-sidebar-settings-tab button.btn.btn-block {
+// 	background-color: $color_prairie_sand_approx !important;
+// }
+// .albumSelect{
+//     border: 1px solid #fff;
+// }
+
+// .selectborder, .selectbordermulti{
+//     border: 3px solid #9c3127;
+// }

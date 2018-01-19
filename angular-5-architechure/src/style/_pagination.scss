@@ -1,0 +1,142 @@
+@import "variables";
+%extend_1 {
+	color: $white !important;
+	font-size: 20px;
+	width: 25px;
+	height: 25px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100%;
+	background-color: $color_shark_approx;
+	text-align: center;
+	line-height: 25px;
+	padding: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30;
+}
+
+//original selectors
+//.ngx-pagination a, .ngx-pagination button
+%extend_2 {
+	color: $white !important;
+	display: block;
+	padding: 0.1875rem 0.625rem;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+
+
+.ngx-pagination {
+	margin-left: 0;
+	margin-bottom: 1rem;
+	text-align: center;
+	padding:0px;
+	li:not(:first-child):not(:last-child) {
+		display:none !important;
+		&.pagination-previous {
+			a {
+				@extend %extend_1;
+			}
+			span {
+				display: none !important;
+			}
+		}
+		&.pagination-next {
+			a {
+				@extend %extend_1;
+			}
+			span {
+				display: none !important;
+			}
+		}
+	}
+	.current {
+		padding: 0.1875rem 0.625rem;
+		background: $color_shark_approx  !important;
+		color: $color_romance_approx;
+		cursor: default;
+	}
+	a {
+		@extend %extend_2;
+		&:hover {
+			background: transparent  !important;
+		}
+	}
+	button {
+		@extend %extend_2;
+		&:hover {
+			background: $color_prairie_sand_approx !important;
+		}
+	}
+}
+ngx-pagination .current {
+	padding: 0.1875rem 0.625rem;
+	background: $color_prairie_sand_approx !important;
+	color: $color_romance_approx;
+	cursor: default;
+}
+
+.ngx-pagination .pagination-previous {
+
+	color: $color_pumice_approx;
+	cursor: no-drop !important;
+	color: $white !important;
+	font-size: 20px !important;
+	width: 25px !important;
+	height: 25px !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100% !important;
+	background-color: $color_shark_approx !important;
+	text-align: center !important;
+	line-height: 25px !important;
+	position: relative;
+	top: 1px;
+	left: -47px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30 !important;
+	a::before {
+		content: '«';
+        display: inline-block;
+		margin-right:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+	&.disabled::before {
+		content: '«';
+        display: inline-block;
+		margin-right:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+}
+.ngx-pagination .pagination-next {
+	color: $color_pumice_approx;
+	cursor: no-drop !important;
+	color: $white !important;
+	font-size: 20px !important;
+	width: 25px !important;
+	height: 25px !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100% !important;
+	background-color: $color_shark_approx !important;
+	text-align: center !important;
+	line-height: 25px !important;
+	position: relative;
+	top: 1px;
+	right: -73px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 3px 0 $black_30 !important;
+	a::after {
+		content: '»';
+        display: inline-block;
+		margin-left:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+	&.disabled::after{
+		content: '»';
+        display: inline-block;
+		margin-left:0rem !important;
+		position: relative;
+		top: -2px;
+	}
+}

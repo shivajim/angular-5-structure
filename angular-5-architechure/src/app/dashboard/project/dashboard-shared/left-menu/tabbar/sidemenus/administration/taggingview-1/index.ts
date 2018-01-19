@@ -1,0 +1,1 @@
+export * from './taggingview-1.component';

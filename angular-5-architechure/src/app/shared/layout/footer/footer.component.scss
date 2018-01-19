@@ -1,0 +1,38 @@
+//colors
+$color_tundora_approx: #444;
+$white: #fff;
+
+// .fixedbottom_container_section {
+// 	right: 0;
+// 	width: 100%;
+// 	float: left;
+// 	background-color: $color_tundora_approx;
+// 	position: relative;
+// 	text-align: center;
+// 	p {
+// 		color: $white;
+// 		line-height: 50px;
+// 		text-align: center;
+// 		margin-bottom: 0;
+// 		background: $color_tundora_approx;
+// 	}
+// }
+
+footer {
+	background: #f3f3f3;
+	background-color: $color_tundora_approx;
+	text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+	color: $white;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 0;
+	background: $color_tundora_approx;
+}

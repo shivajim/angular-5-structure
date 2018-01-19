@@ -1,0 +1,138 @@
+@import "../../../style/variables";
+
+.db_com {
+	width: 100%;
+	float: left;
+	position: relative;
+	 #page-content-wrapper{
+		background-color: $color_storm_dust_approx;
+		min-height:calc(100vh - 125px);
+			 
+		.db_selcont {
+			background-image: $url_1;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 149px;
+			position:relative;
+
+			// .bg-span{
+			// 	// position:absolute;
+			// 	// width:100%;
+			// 	// height:100%;
+			// }
+			.db_selunder{
+				h1{
+				color: $white;
+				font-size: 28px;
+				text-align: center;
+				}
+			
+				.selectpicker{
+					display: block !important;
+				}
+		     }
+		}
+		.db_container {
+			margin: 57px 0px !important;
+			
+			.db_subdiv {
+				background-color: $color_shark_approx;
+				box-shadow: 0 1px 3px 0 $black_30;
+				padding: 15px 0 0;
+				.sub_head {
+					border-bottom: 1px solid $seashell;
+					padding: 0 15px;
+					margin-bottom: 15px;
+					h2 {
+						color: $white;
+						margin: 0;
+						font-size: 20px;
+						padding-bottom: 15px;
+					}
+				}
+				.carousel {
+					margin-bottom: 0;
+					padding: 0;
+						.carousel-control {
+							background-image: none !important;
+							top: 43%;
+							bottom: 50%;
+							font-size: 17px;
+							opacity: .8;
+							display: inline-block;
+							width: 25px;
+							height: 25px;
+							//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+							border-radius: 100%;
+							background-color: $black;
+							text-align: center;
+							&.left {
+								left: -2%;
+							}
+							&.right {
+								right: -2%;
+							}
+							&:hover {
+								background-color: $color_prairie_sand_approx;
+								color: $white;
+							}
+						}
+
+                        .row-fluid .span3 {
+							overflow: hidden;
+							position: relative;
+							//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+							box-shadow: 0 1px 3px 0 $black_30;
+							margin-bottom: 30px;
+							.thumbnail {
+								padding: 0;
+								margin-bottom: 0;
+								border: none;
+								background-color: transparent;
+								img {
+									width: 100%;
+									display: block;
+									height: 175px;
+									//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+									transition: all 1s ease;
+								}
+							}
+							&:hover {
+								.thumbnail img {
+									//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+									transform: scale(1.5);
+								}
+								.db_subtitle a {
+									color: $color_prairie_sand_approx;
+									font-weight: 600;
+								}
+							}
+							.db_subtitle {
+								width: 100%;
+								position: absolute;
+								left: 0;
+								bottom: 0;
+								background-color: $black_51;
+								padding: 10px;
+								a {
+									text-decoration: none;
+									color: $white;
+									//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+									text-shadow: none;
+								}
+							}
+						}
+
+					}
+	         	}
+		}
+    }
+}
+
+
+
+
+
+
+

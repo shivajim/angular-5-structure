@@ -1,0 +1,67 @@
+<div id="page-content-wrapper" class="db_com pcw">
+    <div class="container-fluid">
+        <div *ngIf="showLoader" class="preload">
+            <img src="./assets/images/loader.gif">
+        </div>
+        <div *ngIf="!showLoader" class="row">
+            <div id="mainGrid">
+                <div class="dataPagination col-sm-12"> 
+                    <p> 
+                        <span> Page: {{currentPageNumber}} of {{totalPages}} </span><br>
+                        <span> {{selectedImagesLenght}} Image(s) Selected</span> 
+                    </p>
+                    </div>
+                <div class="shot_div_pagination col-sm-12">
+                    <a href="javascript:void(0)" type="button" class="pgination-last-first firstpage" (click)="fistPage()"> <i class="fa fa-step-backward" aria-hidden="true"></i></a>
+                    <pagination-controls class="shot_div" (pageChange)="currentPageNumber = $event" previousLabel="" nextLabel="" >
+                    </pagination-controls>
+                    <a href="javascript:void(0)" type="button" class="pgination-last-first lastpage" (click)="lastPage()" > <i class="fa fa-step-forward" aria-hidden="true"></i> </a>
+                </div>
+                <div class="db_container db_com rightside-gallerycontainer-panel" [ngStyle]="{'width.px': divWidth}">
+                    <div class="st_subdiv db_com " id="easyPaginate" >
+                        <div *ngIf="imageData" id="imgList" >
+
+                            <div *ngFor="let imgData of project.imageData | paginate: { itemsPerPage:noOfImages, currentPage: currentPageNumber };index as ind" class="img_div ">
+                                <div class="span3">
+                                    <div class="imge" >
+                                        <a href="javascript:void(0)" class="thumbnail img-check"  (click)="selectImageOnClick(imgData, ind)">
+                                            <img class="getindex" [src]="imgData.url" name="imgData.name" id="imgData.id">
+                                        </a>
+                                    </div>
+                                    <div class="tile">
+                                        <h3>
+                                            <span> {{imgData.name}}</span>
+                                        </h3>
+                                        <div class="float menu-share"  (click)="showMenu(imgData.id)">
+                                            <i class="fa fa-plus my-float"></i>
+                                        </div>
+                                        <div  class="soc ts">
+                                            <a href="javascript:void(0)" title="Retouch Comment">
+                                                <i class="fa fa-paint-brush"></i>
+                                            </a>
+                                            <button class="btn btn_image" title="Image Transaction" data-toggle="modal" data-target="#imagetransreport">T</button>
+                                            <button class="btn btn_image" title="Image History" data-toggle="modal" data-target="#imagehistory">H</button>
+                                            <button class="btn btn_image" title="Group/Solo" data-toggle="modal" data-target="#imagesg">G</button>
+                                            <button class="btn btn_image" title="Image Captions" data-toggle="modal" data-target="#imagecap">
+                                                <i class="fa fa-comment-o"></i>
+                                            </button>
+                                            <a href="javascript:void(0)" title="Image Notes" class="button1" (click)="aside_show()">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                            </a>
+                                            <button type="button"class="btn btn_image enlargeImg" data title="Enlarge Image" (click)="enlargeView(imgData.id, ind,currentPageNumber)">
+                                                <i class="fa fa-search-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="albumGrid">
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>

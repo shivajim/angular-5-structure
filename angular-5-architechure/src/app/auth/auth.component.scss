@@ -1,0 +1,116 @@
+//colors
+$color_tundora_approx: #444;
+$color_gallery_approx: #eee;
+$color_prairie_sand_approx: rgba(156,49,39,1);
+$white_100: rgba(255,255,255,1);
+$color_tundora_90_approx: rgba(68, 68, 68, 0.90);
+$color_storm_dust_approx: #666666;
+$white: #fff;
+$color_alto_approx: #ddd;
+$color_chicago_approx: #5c5c5c;
+
+//urls
+$url_0: url(../../assets/images/1.jpg);
+
+.login_div {
+	background: $url_0 no-repeat center center fixed;
+	background-size: cover;
+	background-color: $color_storm_dust_approx;
+	height: 100vh;
+}
+.page-header {
+	padding-bottom: 0 !important;
+	margin: 75px 15px 20px;
+	border-bottom: 1px solid $color_gallery_approx;
+	h1 {
+		text-align: center;
+		font-weight: 800;
+		color: $white !important;
+	}
+}
+.login_data {
+	margin: 0 15px;
+}
+.contact-info {
+	margin-top: 15px;
+	color: $color_alto_approx;
+	font-size: 14px;
+	h6 {
+		margin: 7px 0 !important;
+		font-size: 14px;
+	}
+}
+::-webkit-input-placeholder {
+	color: $color_chicago_approx !important;
+}
+:-moz-placeholder {
+	color: $color_chicago_approx !important;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: $color_chicago_approx !important;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: $color_chicago_approx !important;
+}
+@media only screen and(min-device-width : 320px) and(max-device-width : 425px) {
+	.loginpage_maincontainer_section {
+		margin-top: 100px;
+		.loginpanel_logo_section {
+			margin-bottom: 15px;
+			margin-top: 12px;
+		}
+		.logo_borderbottom_section {
+			height: 2px;
+			background: linear-gradient(to right, $color_prairie_sand_approx 0, $white_100 50%, $color_prairie_sand_approx 100%);
+			filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_prairie_sand_approx', endcolorstr='$color_prairie_sand_approx', gradienttype=1 );
+		}
+		.panel-heading {
+			padding-bottom: 0;
+		}
+	}
+	.page-header {
+		padding-bottom: 5px !important;
+		margin: 90px 0 20px !important;
+		border-bottom: 1px solid $color_gallery_approx;
+		h1 {
+			text-align: center;
+			font-weight: 800;
+		}
+	}
+	.login_data {
+		margin: 0 0 !important;
+	}
+	.vertical-align-wrap {
+		height: 469px;
+		margin-bottom: 6px;
+		margin-top: 67px;
+	}
+	.vertical-align-middle {
+		height: 469px;
+		margin-bottom: 6px;
+		margin-top: 67px;
+	}
+	.col-sm-4.loginform_container_section {
+		background-color: $color_tundora_approx;
+		float: left;
+	}
+}
+@media only screen and(min-device-width : 426px) and(max-device-width : 768px) {
+	.login_data {
+		margin: 0 0 !important;
+	}
+	.col-sm-4.loginform_container_section {
+		background: $color_tundora_90_approx;
+		padding-top: 150px;
+	}
+}
+.col-sm-4.loginform_container_section {
+	background: $color_tundora_90_approx;
+	padding-top: 50px;
+	height: 100vh;
+}
+.checkbox label {
+	color: $white;
+}

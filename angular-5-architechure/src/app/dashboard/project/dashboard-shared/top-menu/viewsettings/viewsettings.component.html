@@ -1,0 +1,62 @@
+<div  class="modal fade" id="fs_viewsettings" tabindex="-1" role="dialog" aria-labelledby="viewlabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="db_com viewtool_div modal-com">
+                <div class="modal-header db_com">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="viewlabel"> {{'top-menu.viewsettings.title' | translate}}
+                    </h4>
+                </div>
+                <div class="modal-body db_com">
+                    <div class="row">
+                        <div class="db_com viewtool-cont ">
+                            <form name="viewsetting_form">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class="form-group down-selectpic">
+                                        <h6> {{'top-menu.viewsettings.title' | translate}} </h6>
+                                        <select name="selectedColumns" id="basic" [(ngModel)]="selectedColumns"  class=" form-control img_size" > 
+                                            <option *ngFor="let col of dataColumns" [value]="col.name"> {{col.name}} </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class=" selectpicker form-group down-selectpic">
+                                        <h6>{{'top-menu.viewsettings.select.images' | translate }}</h6>
+                                        <select name="selectedImages" id="basic"   [(ngModel)]="selectedImages"  class=" form-control img_size">
+                                                <option *ngFor="let no_of_img of dataImages" [value]="no_of_img.name">
+                                                  {{no_of_img.name}}
+                                                </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class="form-group down-selectpic">
+                                        <h6>{{'top-menu.viewsettings.select.size' | translate }}</h6>
+                                        <select name="selectedSizes" id="basic"   [(ngModel)]="selectedSizes"  class="form-control img_size">
+                                                <option *ngFor="let img_size of imageSize" [value]="img_size.name">
+                                                  {{img_size.name}} 
+                                                </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="checkbox down-input di-check">
+                        <label class="chek-label">
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                            {{'top-menu.viewsettings.applySettings' | translate }}
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer db_com">
+                    <button type="submit" class="btn btn-default" id="view_setting" (click)="setViewSettings(selectedSizes,selectedImages,selectedColumns)" data-dismiss="modal"><i class="fa fa-paper-plane" aria-hidden="true"></i> 
+                        {{'top-menu.viewsettings.buttons.submit' | translate }}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>
+                        {{'top-menu.viewsettings.buttons.close' | translate }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
